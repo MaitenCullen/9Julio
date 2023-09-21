@@ -1,0 +1,36 @@
+@import "../../../styles/variables";
+
+.container-home{
+    width: 100%;
+    height: 100%;
+}
+.section-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    .img-home1{
+        width: 100%;
+
+    }
+    .img-home{
+        width: 100%;
+
+    }
+    .div-portal-paciente{
+        background-image: url("../../../assets/img/bannerChico.png");
+        width: 100%;
+    }
+   
+}
+.div-servicios{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 10px;
+    img{
+        max-width: 150px;
+    }
+}
