@@ -1,5 +1,32 @@
 
 
+
 $background: #ffffff;
 $blue-base: #0f3858;
 $grey-base: #b3b3b3;
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url("/public/fonts/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Montserrat-bold';
+    font-style: normal;
+    font-weight: bold;
+    src: url("/public/fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+@mixin blue-button {
+    background-color: $blue-base;
+    color:$background;
+    font-family:'Montserrat', sans-serif;
+    font-size: 15px;
+}
+@mixin navbar {
+    color: $blue-base;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
