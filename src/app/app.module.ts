@@ -10,6 +10,7 @@ import { ServiciosMedicosComponent } from './serviciosMedicos/servicios-medicos/
 import { HomeComponent } from './home/home/home.component';
 import { NgbCarouselConfig, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,7 @@ import { NgbCarouselConfig, NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    NgbdCarouselPause
+    NgbdCarouselPause,
 
   ],
   providers: [],

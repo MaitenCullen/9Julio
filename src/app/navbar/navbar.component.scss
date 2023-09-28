@@ -3,22 +3,37 @@
 
 .navbar{
     background-color: $grey-base;
-       
+       display: flex;
+       justify-content:space-evenly
 }
 .navbar-action{
-    a,li{
+    li,a {
+        text-align: center;
         @include navbar;
         :hover{
-            color: aliceblue;
+            color: white;
             background-color: $blue-base;
         }
+      
     }
-  .dropdown-menu{
-    border: 0;
-    border-radius: 1px;
-    background-color: rgba($color: #0f3858, $alpha: 0.8);    
-       a, li{
-            color: $background;
-        }
+    .dropdown-menu{
+        border: 0;
+        width: 100%;
+        border-radius: 1px;
+        text-align: center;
+        background-color: rgba($color: #0f3858, $alpha: 0.8);    
+           .item-dopdown{
+                width: 100%;
+               a{
+                color: $background;
+                font-size: 0.8rem;
+                text-align: center;
+               }
+                :hover{
+                    color: $blue-base;
+                    background-color: rgba($color: #b3b3b3, $alpha: 0.8);  
+                }
+            }
+           
     }
 }

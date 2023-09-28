@@ -22,11 +22,25 @@ $grey-base: #b3b3b3;
     background-color: $blue-base;
     color:$background;
     font-family:'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
 }
 @mixin navbar {
     color: $blue-base;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 1.2rem;
+    
+}
+@mixin white-header {
+    color: $blue-base;
+    font-family: 'Montserrat', sans-serif;
+}
+@mixin blue-header {
+    color: $blue-base;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+}
+@mixin text-img-home{
+    color: $blue-base;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
 }
