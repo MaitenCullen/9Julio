@@ -9,6 +9,7 @@ import {  NgbdCarouselPause } from './carousel/carousel.component';
 import { ServiciosMedicosComponent } from './serviciosMedicos/servicios-medicos/servicios-medicos.component';
 import { HomeComponent } from './home/home/home.component';
 import { NgbCarouselConfig, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NosotrosComponent } from './nosotros/nosotros.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { NgbCarouselConfig, NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NavbarComponent,
     ServiciosMedicosComponent,
     HomeComponent,
+    NosotrosComponent,
  
   ],
   imports: [

@@ -19,10 +19,14 @@ $grey-base: #b3b3b3;
 }
 
 @mixin blue-button {
-    background-color: $blue-base;
-    color:$background;
-    font-family:'Montserrat', sans-serif;
-    font-size: 1rem;
+    background-color: #0f3858;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 0 30px 0 30px;
+    border-radius: 7px;
+    border: none;
 }
 @mixin navbar {
     color: $blue-base;
@@ -42,5 +46,16 @@ $grey-base: #b3b3b3;
 @mixin text-img-home{
     color: $blue-base;
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    text-align: start;
+}
+@mixin white-text{
+    color: $background;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+}
+@mixin title-nosotros{
+    color: $blue-base;
+    font-family: 'Montserrat-bold',sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
 }

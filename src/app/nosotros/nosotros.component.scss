@@ -1,0 +1,84 @@
+@import "../../styles/variables";
+
+.container-nosotros{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-img-nosotros{
+    img{
+        width: 100%;
+    }
+}
+
+
+.background-nosotros0{
+    display: flex;
+    justify-content: space-around;
+    height: 20vh;
+    width: 100%;
+    img{
+        width: 30%;
+    }
+    p{
+        @include text-img-home;
+        font-size: 1.7rem;
+    }
+}
+.background-nosotros01{
+    display: flex;
+    justify-content: space-between;
+    height: 40vh;
+    width: 100%;
+    p{
+        @include blue-header;
+        font-size:1.2rem;
+    }
+    h4{
+        @include title-nosotros;
+    }
+    .img-nosotros01a{
+        width: 7%;
+    }
+    .img-nosotros01{
+        width: 40%;
+    }
+}
+.background-nosotros02{
+    display: flex;
+    justify-content: space-between;
+    height: 40vh;
+    width: 100%;
+    p{
+        @include blue-header;
+        font-size:1.2rem;
+    }
+    h4{
+        @include title-nosotros;
+    }
+    .img-nosotros02{
+        width: 40%;
+    }
+}
+.background-nosotros03{
+    display: flex;
+    justify-content: space-between;
+    height: 40vh;
+    width: 100%;
+    p{
+        @include blue-header;
+        font-size:1.2rem;
+    }
+    h4{
+        @include title-nosotros;
+       
+    }
+    .img-nosotros03a{
+        width: 35%;
+    }
+    .img-nosotros03{
+        width: 10%;
+    }
+}
