@@ -17,30 +17,30 @@
 .background-nosotros0{
     display: flex;
     justify-content: space-around;
-    height: 20vh;
+    align-items: center;
     width: 100%;
     img{
         width: 30%;
     }
     p{
         @include text-img-home;
-        font-size: 1.7rem;
+        font-size: 1.8rem;
     }
 }
 .background-nosotros01{
     display: flex;
     justify-content: space-between;
-    height: 40vh;
+    align-items: center;
     width: 100%;
     p{
         @include blue-header;
-        font-size:1.2rem;
+        font-size:1.5rem;
     }
     h4{
         @include title-nosotros;
     }
     .img-nosotros01a{
-        width: 7%;
+        width: 10%;
     }
     .img-nosotros01{
         width: 40%;
@@ -49,11 +49,11 @@
 .background-nosotros02{
     display: flex;
     justify-content: space-between;
-    height: 40vh;
+    align-items: center;
     width: 100%;
     p{
         @include blue-header;
-        font-size:1.2rem;
+        font-size:1.5rem;
     }
     h4{
         @include title-nosotros;
@@ -65,20 +65,20 @@
 .background-nosotros03{
     display: flex;
     justify-content: space-between;
-    height: 40vh;
+    align-items: center;
     width: 100%;
     p{
         @include blue-header;
-        font-size:1.2rem;
+        font-size:1.5rem;
     }
     h4{
         @include title-nosotros;
        
     }
     .img-nosotros03a{
-        width: 35%;
+        width: 40%;
     }
     .img-nosotros03{
-        width: 10%;
+        width: 7%;
     }
 }

@@ -4,6 +4,7 @@
 $background: #ffffff;
 $blue-base: #0f3858;
 $grey-base: #b3b3b3;
+$light-grey:#e6e6e6;
 
 @font-face {
     font-family: 'Montserrat';
@@ -22,7 +23,7 @@ $grey-base: #b3b3b3;
     background-color: #0f3858;
     color: #ffffff;
     font-family: "Montserrat", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-decoration: none;
     padding: 0 30px 0 30px;
     border-radius: 7px;
@@ -56,6 +57,7 @@ $grey-base: #b3b3b3;
 @mixin title-nosotros{
     color: $blue-base;
     font-family: 'Montserrat-bold',sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
+    line-height: inherit;
 }

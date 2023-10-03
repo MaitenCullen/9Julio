@@ -10,6 +10,8 @@ import { ServiciosMedicosComponent } from './serviciosMedicos/servicios-medicos/
 import { HomeComponent } from './home/home/home.component';
 import { NgbCarouselConfig, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NosotrosComponent } from './nosotros/nosotros.component';
+import { MedicinaLaboralComponent } from './medicina-laboral/medicina-laboral.component';
+import { FormComponent } from './form/form.component';
 
 
 @NgModule({
@@ -21,6 +23,8 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
     ServiciosMedicosComponent,
     HomeComponent,
     NosotrosComponent,
+    MedicinaLaboralComponent,
+    FormComponent,
  
   ],
   imports: [
