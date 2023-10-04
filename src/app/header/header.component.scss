@@ -55,7 +55,7 @@
         .div-header-text{
             display: flex;
             align-items: center;
-            width: 50%;
+            width: 60%;
             justify-content: space-evenly;
             div{
                 display: flex;
@@ -65,7 +65,7 @@
             }
         }
        h3,h4{
-        font-size: 2rem;
+        font-size: 2.2rem;
         font-weight: bold;
         margin-bottom: 0;
         line-height: 40px;
@@ -96,4 +96,31 @@
             }
         }
    
+}
+
+@media screen and (min-width: 1240px) and (max-width: 1700px) {
+    .section-header{
+        .container-header{
+            .div-header-text{
+                width: 70%;
+             
+            }
+            h3,h4{
+                font-size: 2rem;
+                }
+                h5{
+                    font-size: 2.5rem;
+            }
+        }
+        .div-header-num{
+            width: 20%;
+                h4{
+                font-size: 1.3rem;
+                }
+                h6{
+                    font-size: 2rem;
+                }
+            }
+
+    }
 }
