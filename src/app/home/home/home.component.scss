@@ -187,26 +187,29 @@
 
 @media screen and (min-width: 1240px) and (max-width: 1700px) {
     .servicios-text{
+        width: 40%;
         h4{
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
         p{
-            font-size: 1.5rem;
+            font-size: 1.4rem;
         }
        
     }
     .medicina-text{
+        width: 40%;
         h4{
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
         p{
-            font-size: 1.5rem;
+            font-size: 1.4rem;
         }
+
     }
     .div-portal-paciente-text{
         .div-button-turnos{
             h4{
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
         }
     }

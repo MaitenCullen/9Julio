@@ -12,6 +12,7 @@ import { NgbCarouselConfig, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { MedicinaLaboralComponent } from './medicina-laboral/medicina-laboral.component';
 import { FormComponent } from './form/form.component';
+import { ServiciosBaseComponent } from './servicios-base/servicios-base.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { FormComponent } from './form/form.component';
     NosotrosComponent,
     MedicinaLaboralComponent,
     FormComponent,
+    ServiciosBaseComponent,
  
   ],
   imports: [

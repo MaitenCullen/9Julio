@@ -1,0 +1,69 @@
+@import "../../../styles/variables";
+
+.section-servicios{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    img{
+        width: 100%;
+    }
+}
+.background-servicios{
+    background-image: url("../../../assets/img/serviciosMedicosFondo01.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.container-servicios{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   h5{
+    @include text-img-home;
+    font-size: 2rem;
+    text-align: center;
+   }
+   h6{
+    @include text-img-home;
+    font-size: 1.8rem;
+    text-align: center;
+   }
+}
+.div-img-servicios{
+    width: 70%;
+    margin-top: 7%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    a{
+        text-decoration: none;
+        margin: 1%;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+        div{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            p{
+                @include text-img-home;
+                font-size: 2rem;
+                text-align: center;
+            }
+            img{
+                width: 80%;
+            }
+        }
+       
+    }
+}
+.subtitulo-servicios{
+    margin-top: 7%;
+}

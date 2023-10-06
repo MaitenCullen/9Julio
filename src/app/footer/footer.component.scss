@@ -23,9 +23,10 @@
         font-weight: bold;
         line-height: 16px;
     }
-    h6, li{
+    h6, li, a{
         font-size: 0.9rem;
         color: $background;
+        text-decoration: none;
         font-family: "Montserrat", sans-serif;
         letter-spacing: 1px;
         line-height: 20px;
