@@ -61,3 +61,12 @@ $light-grey:#e6e6e6;
     font-weight: bold;
     line-height: inherit;
 }
+
+.blue-button{
+    @include blue-button;
+}
+.icono-azul{
+    width: 20px;
+    margin-right: 2%;
+    margin-top: 5px;
+}

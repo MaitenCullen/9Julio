@@ -13,6 +13,7 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 import { MedicinaLaboralComponent } from './medicina-laboral/medicina-laboral.component';
 import { FormComponent } from './form/form.component';
 import { ServiciosBaseComponent } from './servicios-base/servicios-base.component';
+import { PreguntasComponent } from './preguntas/preguntas.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { ServiciosBaseComponent } from './servicios-base/servicios-base.componen
     MedicinaLaboralComponent,
     FormComponent,
     ServiciosBaseComponent,
+    PreguntasComponent,
  
   ],
   imports: [

@@ -82,3 +82,39 @@
         width: 7%;
     }
 }
+@media screen and (min-width: 1240px) and (max-width: 1700px) {
+    .background-nosotros0{
+       
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    .background-nosotros01{
+        .img-nosotros01{
+            width: 35%;
+        }
+        p{
+            font-size:1.3rem;
+        }
+    }
+    .background-nosotros02{
+        p{
+            font-size:1.3rem;
+        }
+        .img-nosotros02{
+            width: 35%;
+        }
+    }
+    .background-nosotros03{
+        align-items: flex-end;
+        p{
+            font-size:1.3rem;
+        }
+        .img-nosotros03a{
+            width: 35%;
+        }
+        .img-nosotros03{
+            width: 5%;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@import "../../styles/variables";
+
+.container-preguntas{
+    width: 90%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    h4{
+        @include text-img-home;
+        font-size: 2rem;
+    }
+    h6, p{
+        @include text-img-home;
+    }
+    h6{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+}
+
+.consulta-text{
+    width: 80%;
+    margin-left: 4%;
+}

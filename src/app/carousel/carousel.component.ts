@@ -13,19 +13,23 @@ export class NgbdCarouselPause {
 	images = [
     {
       id:0,
-      img:'./assets/img/banner0.png'
+      img:'./assets/img/banner0.png',
+	  link: 'nosotros'
     },
     {
       id:1,
-      img:"./assets/img/banner01.png"
+      img:"./assets/img/banner01.png",
+	  link: 'medicinaLaboral'
     },
     {
       id:2,
-      img:"./assets/img/banner02.png"
+      img:"./assets/img/banner02.png",
+	  link: 'serviciosMedicos'
     },
     {
       id:3,
-      img:"assets/img/banner03.png"
+      img:"assets/img/banner03.png",
+	  link: 'serviciosMedicos'
     }
   ]
 	paused = false;

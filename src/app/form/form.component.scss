@@ -37,9 +37,16 @@
   // margin: 150px 0;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   h3 {
-    @include  text-img-home;
+    @include  white-header;
     font-size: 1.3rem;
-    margin-bottom: 10px;
+    margin-bottom: 10%;
+    text-align: center;
+  }
+  textarea {
+    height: 150px;
+    max-width: 100%;
+    resize: none;
+    width: 400px;
   }
 }
 
@@ -72,11 +79,7 @@ fieldset {
   border: 1px solid $grey-base;
 }
 
-#contact textarea {
-  height: 150px;
-  max-width: 100%;
-  resize: none;
-}
+
 
 #contact button[type="submit"] {
   cursor: pointer;
@@ -135,7 +138,13 @@ fieldset {
   justify-content: flex-end;
 }
 .forms-buttons{
-  width: 70%;
+  width: 80%;
   display: flex;
   justify-content: space-evenly;
+}
+
+@media screen and (min-width: 1240px) and (max-width: 1700px) {
+  .forms-buttons{
+    width: 90%;
+  }
 }

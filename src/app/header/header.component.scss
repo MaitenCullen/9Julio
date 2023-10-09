@@ -63,6 +63,9 @@
                 flex-direction: column;
                 flex-wrap: wrap;
             }
+            img{
+                width: 5%;
+            }
         }
        h3,h4{
         font-size: 2.2rem;
@@ -119,6 +122,33 @@
                 }
                 h6{
                     font-size: 2rem;
+                }
+            }
+
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1240px) {
+    .section-header{
+        .container-header{
+            .div-header-text{
+                width: 75%;
+             
+            }
+            h3,h4{
+                font-size: 1.3rem;
+                }
+                h5{
+                    font-size: 1.3rem;
+            }
+        }
+        .div-header-num{
+            width: 25%;
+                h4{
+                font-size: 1rem;
+                }
+                h6{
+                    font-size: 1.5rem;
+                    letter-spacing: 1px;
                 }
             }
 

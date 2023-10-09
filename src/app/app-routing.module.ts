@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home/home.component';
 import { MedicinaLaboralComponent } from './medicina-laboral/medicina-laboral.component';
 import { ServiciosMedicosComponent } from './serviciosMedicos/servicios-medicos/servicios-medicos.component';
 import { ServiciosBaseComponent } from './servicios-base/servicios-base.component';
+import { PreguntasComponent } from './preguntas/preguntas.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'serviciosMedicos', component: ServiciosMedicosComponent },
   { path: 'medicinaLaboral', component: MedicinaLaboralComponent },
   { path: 'servicio', component: ServiciosBaseComponent },
+  { path: 'preguntasFrecuentes', component: PreguntasComponent },
 ];
 
 @NgModule({

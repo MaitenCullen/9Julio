@@ -7,9 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    img{
-        width: 100%;
-    }
+    
 }
 .container-medicina-laboral{
     display: flex;
@@ -17,6 +15,9 @@
     height: 80%;
     margin-bottom: 3%;
     background-image: url("../../assets/img/backgroundMedicinaLaboral.png");
+    div{
+        width: 35%;
+    }
     h5{
         @include text-img-home;
         font-size: 2rem;
@@ -24,6 +25,7 @@
     ul{
         margin: 0;
         padding: 0;
+        text-align: justify;
     }
     li{
         @include text-img-home;
@@ -31,6 +33,9 @@
         line-height: 30px;
         padding: 1%;
         text-align: justify;
+        list-style: none;
+        display: flex;
+        align-items: flex-start;
     }
 }
 .div-texts-laboral{
@@ -41,7 +46,7 @@
     padding: 10px;
     h5{
         @include white-header;
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
   
     .container-text-laboral{
@@ -86,13 +91,34 @@
             li{
                 list-style-type: none;
                 @include text-img-home;
-                font-size: 1.3rem;
+                font-size: 1rem;
                 line-height: 30px;
                 padding: 1%;
                 text-align: justify;
+            }
+            img{
+                width: 95%;
             }
         }
        
     }
     
+}
+@media screen and (min-width: 1240px) and (max-width: 1700px) {
+    .container-medicina-laboral{
+        div{
+            width: 45%;
+        }
+        h5{
+            font-size: 1.5rem;
+        }
+        li{
+            font-size: 1rem;
+        }
+    }
+    .div-texts-laboral{
+        h5{
+            font-size: 2rem;
+        }
+    }
 }
