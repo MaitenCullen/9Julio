@@ -1,6 +1,6 @@
-@import "styles/variables.scss";
 @import "~bootstrap/dist/css/bootstrap.css";
 @import 'bootstrap/scss/bootstrap';
+@import "styles/variables.scss";
 body{
     background-color:$background;
     max-width: 1920px;

@@ -3,6 +3,7 @@ import { NgbCarousel, NgbCarouselModule, NgbSlideEvent, NgbSlideEventSource } fr
 import { NgFor } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
+
 @Component({
 	selector: 'carousel-pause',
 	standalone: true,
@@ -40,6 +41,49 @@ export class NgbdCarouselPause {
 
 	@ViewChild('carousel', { static: true }) carousel!: NgbCarousel;
 
+	updateImagesForScreenWidth() {
+		const screenWidth = window.innerWidth;
+	
+		
+		let updatedImages = this.images; 
+	
+		if (screenWidth < 850) {
+		  updatedImages = [
+			{
+			  id: 0,
+			  img: './assets/img/banner0M.png',
+			  link: 'nosotros'
+			},
+			{
+				id:1,
+				img:"./assets/img/banner01M.png",
+				link: 'medicinaLaboral'
+			  },
+			  {
+				id:2,
+				img:"./assets/img/banner02M.png",
+				link: 'serviciosMedicos'
+			  },
+			  {
+				id:3,
+				img:"assets/img/banner03M.png",
+				link: 'serviciosMedicos'
+			  }
+		  ];
+		}
+	
+		this.images = updatedImages;
+	
+		this.carousel.cycle(); //reinicio
+	  }
+	
+	  ngOnInit() {
+		this.updateImagesForScreenWidth();
+		window.addEventListener('resize', () => {
+		  this.updateImagesForScreenWidth();
+		});
+	  }
+	  
 	togglePaused() {
 		if (this.paused) {
 			this.carousel.cycle();
