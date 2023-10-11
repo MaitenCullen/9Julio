@@ -92,7 +92,6 @@ fieldset {
   background: $blue-base;
   color: #FFF;
   font-family: 'Montserrat', sans-serif;
-  margin: 0 5px 5px;
   padding: 10px;
   font-size: 15px;
 }
@@ -146,5 +145,40 @@ fieldset {
 @media screen and (min-width: 1240px) and (max-width: 1700px) {
   .forms-buttons{
     width: 90%;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 1240px) {
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 649px) {
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  #contact {
+    padding: 10px;
+      h3 {
+        font-size: 1rem;
+      }
+      label{
+        width: 45%;
+        margin: 0;
+        button{
+          margin: 0;
+          padding: 6px;
+          font-size: 12px;
+        }
+      }
+    
+  }
+  .forms-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  
   }
 }
