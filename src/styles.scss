@@ -9,3 +9,12 @@ body{
     flex-direction: column;
 }
 
+.btn-wsp{
+    position: fixed;
+    z-index: 3;
+    font-size: 5rem;
+    line-height: 55px;
+    bottom: 10%;
+    right: 30px;
+
+}
