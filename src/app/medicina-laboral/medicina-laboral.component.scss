@@ -15,11 +15,12 @@
     margin-bottom: 3%;
     background-image: url("../../assets/img/backgroundMedicinaLaboral.png");
     background-repeat: no-repeat;
+    background-size: cover;
     .div-contenido-medicina{
         width: 75%;
         display: flex;
         align-items: start;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-direction: row;
     }
     h5{
@@ -163,6 +164,9 @@
         .div-contenido-medicina{
             flex-direction: column;
             width: 60%;
+            div{
+                width: 100%;
+            }
         }
     }
 
@@ -208,10 +212,10 @@
                 }
                 li{
                     font-size: 1.2rem;
-                    text-align: left;
+                    text-align: justify;
                 }
                 img{
-                    width: 70%;
+                    width: 60%;
                 }
             }
            
@@ -229,6 +233,9 @@
         .div-contenido-medicina{
             flex-direction: column;
             width: 70%;
+            div{
+                width: 100%;
+            }
             h5{
                 font-size: 1.2rem;
             }
@@ -256,7 +263,7 @@
                 padding: 2px;
                 p{
                     font-size: 0.8rem;
-                    text-align: left;
+                    text-align: justify;
                 }
             }
 

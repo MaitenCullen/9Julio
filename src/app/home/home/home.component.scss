@@ -120,6 +120,7 @@
     .div-portal-paciente{
         position: relative;
         height: 50%;
+        width: 100%;
         img{
             width: 100%;
             z-index: 1;
@@ -129,6 +130,8 @@
     }
     .div-portal-paciente-text{
         background-image: url("../../../assets/img/bannerChico.png");
+        background-repeat: no-repeat;
+        background-size: cover;
         width: 100%;
         position: absolute;
         z-index: 3;
@@ -157,11 +160,13 @@
     align-items: center;
     justify-content: center;
     width: 100%; 
+    margin: 3% 0 3% 0;
     h4{
         font-family: 'Montserrat', sans-serif;
         color: $blue-base;
         font-size: 2rem;
         text-align: center;
+      
 
     }
     .div-servicios{
@@ -169,10 +174,10 @@
         align-items: center;
         justify-content: space-between;
         flex-direction: row;
-        width: 100%;
+        width: 90%;
         padding: 10px;
         img{
-            max-width: 150px;
+            max-width: 160px;
             margin-bottom: 7px;
         }
         div{
@@ -180,6 +185,7 @@
             align-items: center;
             flex-direction: column;
             width: 30%;
+            margin:3% 0 3% 0;
             h5{
                 font-family: 'Montserrat', sans-serif;
                 color: $grey-base;
