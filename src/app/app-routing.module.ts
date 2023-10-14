@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'nosotros', component: NosotrosComponent },
   { path: 'serviciosMedicos', component: ServiciosMedicosComponent },
   { path: 'medicinaLaboral', component: MedicinaLaboralComponent },
-  { path: 'servicio', component: ServiciosBaseComponent },
+  { path: 'tomografia', component: ServiciosBaseComponent },
   { path: 'preguntasFrecuentes', component: PreguntasComponent },
 ];
 
