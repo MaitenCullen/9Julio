@@ -90,7 +90,7 @@
 .container-sabermas{
     margin: 3% 0 3% 0;
     background-color: $grey-base;
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-around;
     padding: 20px;
@@ -113,6 +113,10 @@
         width: 50%;
         padding: 0 10px 0 10px;
     }
+      h5{
+                margin: 3% 0 2% 0;
+                padding: 2% 0 2% 0;
+            }
     p{
         @include white-header;
         font-size: 1.2rem;
@@ -204,7 +208,7 @@
         flex-direction: column;
         div{
             width: 100%;
-            padding: 2% 0 2% 0;
+            padding:0;
         }
         p{
             @include white-header;

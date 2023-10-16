@@ -34,6 +34,7 @@ $light-grey:#e6e6e6;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     
+    
 }
 @mixin white-header {
     color: $blue-base;
@@ -68,4 +69,5 @@ $light-grey:#e6e6e6;
 .icono-azul{
     width: 20px;
     margin-right: 2%;
+    margin-top: 3px;
 }

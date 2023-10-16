@@ -14,6 +14,11 @@ import { MedicinaLaboralComponent } from './medicina-laboral/medicina-laboral.co
 import { FormComponent } from './form/form.component';
 import { ServiciosBaseComponent } from './servicios-base/servicios-base.component';
 import { PreguntasComponent } from './preguntas/preguntas.component';
+import { ServiciosEcografiaComponent } from './servicios-ecografia/servicios-ecografia.component';
+import { RadiologiaComponent } from './radiologia/radiologia.component';
+import { CardiologiaComponent } from './cardiologia/cardiologia.component';
+import { OftalmologiaComponent } from './oftalmologia/oftalmologia.component';
+import { AudiologiaComponent } from './audiologia/audiologia.component';
 
 
 @NgModule({
@@ -29,6 +34,11 @@ import { PreguntasComponent } from './preguntas/preguntas.component';
     FormComponent,
     ServiciosBaseComponent,
     PreguntasComponent,
+    ServiciosEcografiaComponent,
+    RadiologiaComponent,
+    CardiologiaComponent,
+    OftalmologiaComponent,
+    AudiologiaComponent,
  
   ],
   imports: [
