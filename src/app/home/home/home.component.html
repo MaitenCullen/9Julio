@@ -7,33 +7,34 @@
                     <div class="servicios-text">
                         <h4>SERVICIOS MEDICOS</h4>
                         <p>Encontrá toda la variedad <br/> de estudios que realizamos</p>
-                        <button class="btn">Más Info</button>
+                        <button class="btn blue-button"  [routerLink]="'serviciosMedicos'">Más Info</button>
                 </div>
                 <img src="assets/img/serviciosMedicos.png" class="img-home1">
+                <img src="assets/img/serviciosMedicosMobile.png" class="img-home1M">
             </div>
             <div class="div-medicina-laboral">
                 <div class="container-laboral">
                     <div class="medicina-text">
                         <h4>MEDICINA LABORAL</h4>
-                        <p>Nos especializamos en todo lo <br/> que necesitas en realación a lo laboral.</p>
-                        <button class="btn">Solicitar información</button>
+                        <p>Nos especializamos en todo lo <br/> que necesitas en relación a lo laboral.</p>
+                        <button class="btn blue-button" [routerLink]="'medicinaLaboral'">Solicitar información</button>
                     </div>
                 </div>
-                   
                 <img src="assets/img/medicinaLaboral.png"  class="img-home"> 
+                <img src="assets/img/medicinaLaboralMobile.png"  class="img-homeM"> 
             </div>
         </div> 
         <div class="div-portal-paciente">
             <img src="assets/img/rombos.png"  class="rombos-home">
             <div class="div-portal-paciente-text">
                 <div class="div-button-turnos">
-                    <h4>PORTAL DE PACIENTES - TURNOS Y RESULTADOS ONLINE</h4>
+                    <h4>PORTAL DE PACIENTES <br/> TURNOS Y RESULTADOS ONLINE</h4>
                     <button  type="button" class=" btn h-50 blue-button"><a>Ingresar</a></button>
                 </div>
                 
             </div>
         </div>
-        <div class="d-flex flex-column align-items-center w-100 container-servicios">
+        <div class="container-servicios">
             <div>
                 <h4>
                     NUESTROS SERVICIOS
@@ -67,5 +68,8 @@
             </div>
             
         </div>
+        <a href="https://api.whatsapp.com/send?phone=9543413540307" class="btn-wsp" target="_blank">
+            <i class="fa-brands fa-whatsapp" style="color: #67ad5b;"></i>
+        </a>
     </section>
 </div>

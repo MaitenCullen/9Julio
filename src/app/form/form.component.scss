@@ -37,9 +37,16 @@
   // margin: 150px 0;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   h3 {
-    @include  text-img-home;
+    @include  white-header;
     font-size: 1.3rem;
-    margin-bottom: 10px;
+    margin-bottom: 10%;
+    text-align: center;
+  }
+  textarea {
+    height: 150px;
+    max-width: 100%;
+    resize: none;
+    width: 400px;
   }
 }
 
@@ -72,11 +79,7 @@ fieldset {
   border: 1px solid $grey-base;
 }
 
-#contact textarea {
-  height: 150px;
-  max-width: 100%;
-  resize: none;
-}
+
 
 #contact button[type="submit"] {
   cursor: pointer;
@@ -89,7 +92,6 @@ fieldset {
   background: $blue-base;
   color: #FFF;
   font-family: 'Montserrat', sans-serif;
-  margin: 0 5px 5px;
   padding: 10px;
   font-size: 15px;
 }
@@ -135,7 +137,48 @@ fieldset {
   justify-content: flex-end;
 }
 .forms-buttons{
-  width: 70%;
+  width: 80%;
   display: flex;
   justify-content: space-evenly;
+}
+
+@media screen and (min-width: 1240px) and (max-width: 1700px) {
+  .forms-buttons{
+    width: 90%;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 1240px) {
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 649px) {
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  #contact {
+    padding: 10px;
+      h3 {
+        font-size: 1rem;
+      }
+      label{
+        width: 45%;
+        margin: 0;
+        button{
+          margin: 0;
+          padding: 6px;
+          font-size: 12px;
+        }
+      }
+    
+  }
+  .forms-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  
+  }
 }
