@@ -19,6 +19,7 @@ import { RadiologiaComponent } from './radiologia/radiologia.component';
 import { CardiologiaComponent } from './cardiologia/cardiologia.component';
 import { OftalmologiaComponent } from './oftalmologia/oftalmologia.component';
 import { AudiologiaComponent } from './audiologia/audiologia.component';
+import { CoberturasComponent } from './coberturas/coberturas.component';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import { AudiologiaComponent } from './audiologia/audiologia.component';
     CardiologiaComponent,
     OftalmologiaComponent,
     AudiologiaComponent,
+    CoberturasComponent,
  
   ],
   imports: [
