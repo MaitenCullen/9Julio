@@ -17,7 +17,7 @@
                     <div class="medicina-text">
                         <h4>MEDICINA LABORAL</h4>
                         <p>Nos especializamos en todo lo <br/> que necesitas en relación a lo laboral.</p>
-                        <button class="btn blue-button" [routerLink]="'medicinaLaboral'">Solicitar información</button>
+                        <button class="btn blue-button"  [routerLink]="'medicinaLaboral'">Solicitar información</button>
                     </div>
                 </div>
                 <img src="assets/img/medicinaLaboral.png"  class="img-home"> 
@@ -41,27 +41,27 @@
                 </h4>
             </div>
             <div class="div-servicios">
-                <div>
+                <div [routerLink]="'tomografia'">
                     <img src="assets/img/tomografia.png" alt="">
                     <h5>TOMOGRAFÍA</h5>
                 </div>
-                <div>
+                <div  [routerLink]="'radiografia'">
                     <img src="assets/img/rayos.png" alt="">
                     <h5>RAYOS</h5>
                 </div>
-                <div>
+                <div  [routerLink]="'ecografia'">
                     <img src="assets/img/ecografia.png" alt="">
                     <h5>ECOGRAFÍA</h5>
                 </div>
-                <div>
+                <div  [routerLink]="'cardiologia'">
                     <img src="assets/img/cardiologia.png" alt="">
                     <h5>ESTUDIOS CARDIOLÓGICOS</h5>
                 </div>
-                <div>
+                <div  [routerLink]="'oftalmologia'">
                     <img src="assets/img/oftalmologia.png" alt="">
                     <h5>OFTALMOLOGÍA</h5>
                 </div>
-                <div>
+                <div  [routerLink]="'audiologia'">
                     <img src="assets/img/audio.png" alt="">
                     <h5>AUDIOLOGÍA</h5>
                 </div>

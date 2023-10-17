@@ -74,7 +74,7 @@
             position: inherit;
             width: 100%;
             height: 50%;
-            z-index: 1;
+           
             display: flex;
             align-items: center;
             justify-content: flex-start;
@@ -186,6 +186,9 @@
             flex-direction: column;
             width: 30%;
             margin:3% 0 3% 0;
+            &:hover{
+                cursor: pointer;
+            }
             h5{
                 font-family: 'Montserrat', sans-serif;
                 color: $grey-base;
@@ -427,6 +430,9 @@
         .blue-button{
             font-size: 0.6rem;
             padding: 3px 16px 3px 16px;
+            &:hover{
+                cursor: pointer;
+            }
         }
         h4{
             font-size: 0.9rem;
@@ -453,6 +459,9 @@
         .blue-button{
             font-size: 0.6rem;
             padding: 3px 16px 3px 16px;
+            &:hover{
+                cursor: pointer;
+            }
         }
         h4{
             font-size: 0.9rem;

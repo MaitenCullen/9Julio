@@ -5,12 +5,12 @@ import { HomeComponent } from './home/home/home.component';
 import { MedicinaLaboralComponent } from './medicina-laboral/medicina-laboral.component';
 import { ServiciosMedicosComponent } from './serviciosMedicos/servicios-medicos/servicios-medicos.component';
 import { ServiciosBaseComponent } from './servicios-base/servicios-base.component';
-import { PreguntasComponent } from './preguntas/preguntas.component';
+import { CardiologiaComponent } from './cardiologia/cardiologia.component';
+import { AudiologiaComponent } from './audiologia/audiologia.component';
 import { ServiciosEcografiaComponent } from './servicios-ecografia/servicios-ecografia.component';
 import { RadiologiaComponent } from './radiologia/radiologia.component';
-import { CardiologiaComponent } from './cardiologia/cardiologia.component';
 import { OftalmologiaComponent } from './oftalmologia/oftalmologia.component';
-import { AudiologiaComponent } from './audiologia/audiologia.component';
+import { PreguntasComponent } from './preguntas/preguntas.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
