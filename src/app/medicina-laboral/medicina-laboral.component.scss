@@ -36,7 +36,7 @@
     }
     li{
         @include text-img-home;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         line-height: 30px;
         padding: 1%;
         text-align: justify;
@@ -111,13 +111,13 @@
             li{
                 list-style-type: none;
                 @include text-img-home;
-                font-size: 1rem;
+                font-size: 1.3rem;
                 line-height: 30px;
                 padding: 1%;
                 text-align: left;
             }
             img{
-                width: 60%;
+                width: 80%;
             }
         }
        
