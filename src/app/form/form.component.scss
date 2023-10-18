@@ -14,7 +14,7 @@
 }
 
 .container {
-  max-width: 500px;
+  width: 500px;
   margin: 0 auto;
 }
 
@@ -155,7 +155,7 @@ fieldset {
 }
 @media screen and (min-width: 200px) and (max-width: 649px) {
   .container {
-    max-width: 500px;
+    width: 270px;
     margin: 0 auto;
   }
   #contact {
