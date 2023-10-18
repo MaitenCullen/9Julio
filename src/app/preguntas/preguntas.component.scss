@@ -23,10 +23,10 @@
         @include text-img-home;
     }
     h6{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     p{
-        font-size: 1.3rem;
+        font-size: 1.6rem;
     }
 }
 .div-preguntas-00{
@@ -40,6 +40,11 @@
     }
     .div-preguntas{
         width: 90%;
+    }
+    .card-body{
+        p{
+            font-size: 1.3rem;
+        }
     }
 }
 
@@ -56,9 +61,14 @@
     .div-preguntas{
         width: 90%;
     }
+    .card-body{
+        p{
+            font-size: 1.3rem;
+        }
+    }
     .consulta-text{
-        width: 87%;
-        margin:4% 0 4% 0%;
+        width: 90%;
+        margin:3% 0 3% 0%;
         h6{
             width: 90%;
         }
@@ -89,24 +99,18 @@
             font-size: 1.5rem;
         }
         p{
-            font-size: 1.1rem;
+            font-size: 1.5rem;
         }
     }
     .div-preguntas-00{
         div{
             width: 100%;
         }
-        .div-preguntas{
-            width: 90%;
-        }
     }
 
     .div-preguntas-01{
         div{
-            width: 95%;
-        }
-        .div-preguntas{
-            width: 90%;
+            width: 100%;
         }
         .consulta-text{
             width: 90%;
@@ -121,9 +125,11 @@
 
 @media screen and (min-width: 650px) and (max-width: 1239px) {
     .container-preguntas{
+        align-items: center;
         .preguntas-frecuentes{
             display: flex;
             flex-direction: column;
+            margin: 2% 0 2% 0;
         }
         h4{
             font-size: 1.8rem;
@@ -132,36 +138,47 @@
             @include text-img-home;
         }
         h6{
-            font-size: 1.5rem;
+            font-size: 1.6rem;
         }
         p{
-            font-size: 1.1rem;
+            font-size: 1.3rem;
         }
     }
     .div-preguntas-00{
-
+        align-items: center;
         div{
             width: 100%;
         }
         .div-preguntas{
             width: 90%;
         }
+        .card-body{
+            p{
+                font-size: 1.1rem;
+            }
+        }
     }
 
     .div-preguntas-01{
-        align-items: flex-start;
+        align-items: center;
         div{
-            width: 95%;
+            width: 100%;
         }
         .div-preguntas{
             width: 90%;
         }
         .consulta-text{
-            width: 100%;
+            width: 70%;
             margin:0;
+            text-align: center;
             h6{
-                width: 100%;
-                font-size: 1rem;
+                text-align: center;
+                font-size: 1.1rem;
+            }
+        }
+        .card-body{
+            p{
+                font-size: 1.1rem;
             }
         }
     }
@@ -169,7 +186,9 @@
 }
 @media screen and (min-width: 200px) and (max-width: 649px) {
     .container-preguntas{
+        align-items: center;
         .preguntas-frecuentes{
+            margin: 2% 0 2% 0;
             display: flex;
             flex-direction: column;
         }
@@ -183,11 +202,11 @@
             font-size: 1.3rem;
         }
         p{
-            font-size: 1rem;
+            font-size: 1.1rem;
         }
     }
     .div-preguntas-00{
-
+        align-items: center;
         div{
             width: 100%;
         }
@@ -197,9 +216,9 @@
     }
 
     .div-preguntas-01{
-        align-items: flex-start;
+        align-items: center;
         div{
-            width: 95%;
+            width: 100%;
         }
         .div-preguntas{
             width: 90%;
@@ -207,8 +226,12 @@
         .consulta-text{
             width: 100%;
             margin:0;
+            text-align: center;
             h6{
-                width: 100%;
+                text-align: center;
+                font-size: 1rem;
+            }
+            .blue-button{
                 font-size: 1rem;
             }
         }

@@ -12,6 +12,7 @@ import { RadiologiaComponent } from './radiologia/radiologia.component';
 import { OftalmologiaComponent } from './oftalmologia/oftalmologia.component';
 import { PreguntasComponent } from './preguntas/preguntas.component';
 import { CoberturasComponent } from './coberturas/coberturas.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'audiologia', component: AudiologiaComponent},
   { path: 'preguntasFrecuentes', component: PreguntasComponent },
   { path: 'coberturas', component: CoberturasComponent },
+  { path: 'contacto', component: ContactoComponent },
 ];
 
 @NgModule({

@@ -8,15 +8,16 @@
     align-items: center;
 }
 .container-servicios{
+    padding: 0 20px 0 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 .container-servicios-img{
-    width: 80%;
+    width: 90%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin:3% 0 3% 0;
     article{
         display: flex;
@@ -82,15 +83,21 @@
 .div-button{
     display: grid;
     justify-content: center;
-    margin:3% 0 3% 0;
+    margin:0 0 3% 0;
     button{
         @include blue-button;
     }
 }
+.section-sabermas{
+    padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .container-sabermas{
     margin: 3% 0 3% 0;
-    background-color: $grey-base;
-    width: 80%;
+    background-color: $light-grey;
+    width: 90%;
     display: flex;
     justify-content: space-around;
     padding: 20px;
@@ -290,7 +297,7 @@
     .div-button{
         display: grid;
         justify-content: center;
-        margin:3% 0 3% 0;
+        margin:0 0 3% 0;
         button{
             @include blue-button;
             font-size: 0.8rem;
