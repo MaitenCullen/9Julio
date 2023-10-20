@@ -382,6 +382,9 @@
 }
 
 @media screen and (min-width: 200px) and (max-width: 600px) {
+    .container-home{
+        margin-bottom: 60%;
+    }
     .section-home{
         .div-img-home-services{
                 justify-content: center;
@@ -501,10 +504,10 @@
             flex-wrap: wrap;
             flex-direction: row;
             justify-content: space-between;
-            width: 80%;
+            width: 100%;
             padding: 0;
             img{
-                max-width: 100px;
+                max-width: 90px;
             }
             div{
                 h5{

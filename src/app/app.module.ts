@@ -21,6 +21,8 @@ import { OftalmologiaComponent } from './oftalmologia/oftalmologia.component';
 import { AudiologiaComponent } from './audiologia/audiologia.component';
 import { CoberturasComponent } from './coberturas/coberturas.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -43,13 +45,14 @@ import { ContactoComponent } from './contacto/contacto.component';
     AudiologiaComponent,
     CoberturasComponent,
     ContactoComponent,
- 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     NgbdCarouselPause,
+    HttpClientModule,
+    ReactiveFormsModule
 
   ],
   providers: [],

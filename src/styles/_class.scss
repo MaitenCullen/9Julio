@@ -58,7 +58,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 90%;
 }
 .container-ul{
    width: 100%;
@@ -68,6 +68,8 @@
     margin:3% 0 3% 0;
     ul{
         width: 30%;
+        margin: 0;
+        padding: 0;
     }
     li{
         @include text-img-home;
@@ -131,11 +133,25 @@
 
 
 @media screen and (min-width: 1240px) and (max-width: 1700px) {
+    .container-servicios{
+        padding: 0 35px 0 35px;
+    }
     .container-servicios-img{
         width: 100%;
+      
         .div-title{
+            width: 60%;
+            h5, h6{
+                font-size: 1.3rem;
+            }
             h4{
                 font-size: 2rem;
+            }
+            .div-descripcion{
+                width: 70%;
+                p{
+                    font-size: 1.1rem;
+                }
             }
         }
       
@@ -143,9 +159,17 @@
     .container-servicios-lista{
         width: 100%;
     }
-    .container-ul{
-        padding: 1%;
+    .container-ul{  
+        ul{
+            font-size: 1.1rem;
+        }
     
+    }
+    .section-sabermas{
+        padding: 0 35px 0 35px;
+    }
+    .container-sabermas{
+        width: 100%;
     }
 
 }
@@ -235,6 +259,9 @@
 }
 
 @media screen and (min-width: 200px) and (max-width: 649px) {
+    .section-servicios-medicos{
+        margin-bottom: 70%;
+    }
     .container-servicios-img{
         flex-direction: column-reverse;
         width: 100%;
@@ -252,7 +279,7 @@
                 margin: 0;
             }
             h4{
-                font-size: 1.8rem;
+                font-size: 1.5rem;
                 text-align: center;
             }
             h6{
@@ -266,7 +293,7 @@
                 justify-content: space-between;
                 text-align: center;
                 p{
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                     text-align: center;
                 }
             }
@@ -291,7 +318,7 @@
             margin: 0;
         }
         li{
-            font-size: 1rem;
+            font-size: 0.8rem;
         }
     }
     .div-button{
@@ -304,7 +331,7 @@
         }
     }
     .container-sabermas{
-        width: 80%;
+        width:90%;
         display: flex;
         justify-content: space-around;
         flex-direction: column;
@@ -331,7 +358,7 @@
             }
             p{
                 @include white-header;
-                font-size: 1rem;
+                font-size: 0.8rem;
                 text-align: justify;
                 padding: 0;
                 margin: 0;
