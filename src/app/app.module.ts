@@ -19,6 +19,10 @@ import { RadiologiaComponent } from './radiologia/radiologia.component';
 import { CardiologiaComponent } from './cardiologia/cardiologia.component';
 import { OftalmologiaComponent } from './oftalmologia/oftalmologia.component';
 import { AudiologiaComponent } from './audiologia/audiologia.component';
+import { CoberturasComponent } from './coberturas/coberturas.component';
+import { ContactoComponent } from './contacto/contacto.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -39,13 +43,16 @@ import { AudiologiaComponent } from './audiologia/audiologia.component';
     CardiologiaComponent,
     OftalmologiaComponent,
     AudiologiaComponent,
- 
+    CoberturasComponent,
+    ContactoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     NgbdCarouselPause,
+    HttpClientModule,
+    ReactiveFormsModule
 
   ],
   providers: [],

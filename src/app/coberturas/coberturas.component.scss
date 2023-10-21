@@ -1,0 +1,95 @@
+@import "../../styles/variables";
+
+.section-coberturas{ 
+    img{
+        width: 100%;
+     }
+}
+.container-coberturas{
+    height: 80vh;
+    background-image: url("../../assets/img/coberturasFondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        p,h5{
+            @include navbar;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        h5{
+            font-size: 2rem;
+        }
+    }
+   
+}
+
+
+@media screen and (min-width: 650px) and (max-width: 1239px) {
+    .container-coberturas{
+        height: 90vh;
+        background-image: url("../../assets/img/coberturasFondo.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div{
+            height: 100%;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            p,h5{
+                @include navbar;
+                text-align: center;
+                font-size: 1.2rem;
+            }
+            h5{
+                font-size: 1.6rem;
+            }
+        }
+       
+    }
+
+}
+
+@media screen and (min-width: 200px) and (max-width: 649px) {
+    .container-coberturas{
+        height: 90vh;
+        background-image: url("../../assets/img/coberturasFondo.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div{
+            height: 100%;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            p,h5{
+                @include navbar;
+                text-align: center;
+                font-size: 1rem;
+            }
+            h5{
+                font-size: 0.9rem;
+            }
+        }
+       
+    }
+    }

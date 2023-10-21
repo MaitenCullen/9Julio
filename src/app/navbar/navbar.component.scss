@@ -16,8 +16,18 @@
         }
       
     }
+    .active{
+        background-color: $blue-base;
+       a{
+        color: $background;
+       } 
+    }
+    .button-navbar{
+        background-color: $grey-base;
+    }
     .navbar-toggler{
-        border: none;
+        border: none; 
+        outline: none; 
           
     }
     .dropdown-menu{
