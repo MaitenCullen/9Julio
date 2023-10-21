@@ -1,49 +1,45 @@
 <div class="container" >  
-    <form id="contact" action="https://formsubmit.co/info@diagnostico9dejulio.com.ar" [formGroup]="form" method="POST">
+    <form id="contact" action="https://formsubmit.co/info@diagnostico9dejulio.com.ar"  method="POST"  >
       <h3>Para mas información, le pedimos 
         que por favor complete el formulario.</h3>
       <fieldset>
-        <input placeholder="Nombre y apellido" type="text" tabindex="1" formControlName="nombre" class="form-control nombre" name="nombre" [(ngModel)]="nombre">
-        <span *ngIf="form.controls['nombre']?.touched && !form.controls['nombre'].valid" class="error">
-         Nombre y apellido
+        <input placeholder="Nombre y apellido" type="text" tabindex="1" [formControl]="nombreControl" class="form-control nombre" name="nombre" required [(ngModel)]="nombre">
+        <span *ngIf="nombreControl?.touched && !nombreControl.valid" class="error">
+         Ingresa nombre y apellido
         </span>
       </fieldset>
       <fieldset>
-        <input placeholder="Empresa:" type="text" tabindex="2" formControlName="empresa" class="form-control empresa" [(ngModel)]="empresa" name="empresa" >
-        <span *ngIf="form.controls['empresa']?.touched && !form.controls['empresa'].valid" class="error">
+        <input placeholder="Empresa:" type="text" tabindex="2" [formControl]="empresaControl" class="form-control empresa" [(ngModel)]="empresa" name="empresa" required>
+        <span *ngIf="empresaControl?.touched && !empresaControl.valid" class="error">
           Nombre de tu empresa
          </span>
       </fieldset>
       <fieldset>
-        <input placeholder="Teléfono" type="tel" tabindex="3"  formControlName="telefono" class="form-control telefono" name="telefono" >
+        <input placeholder="Teléfono" type="tel" tabindex="3"  [formControl]="telefonoControl" class="form-control telefono" name="telefono" required>
       </fieldset>
       <fieldset >
-        <input placeholder="Mail" type="email" tabindex="4"  formControlName="email" name="email" class="form-control mail"  [(ngModel)]="email" >
-        <span *ngIf="form.controls['email']?.touched && !form.controls['email'].valid" class="error">
+        <input placeholder="Mail" type="email" tabindex="4"  [formControl]="emailControl" name="email" required class="form-control mail"  [(ngModel)]="email" >
+        <span *ngIf="emailControl?.touched && !emailControl.valid" class="error">
          Ingresa tu email <br/>
          </span>
-        <span *ngIf="form.get('email')?.errors?.['email']" class="error">
-          El mail no es válido
-        </span>
       </fieldset>
       <fieldset>
-        <textarea placeholder="Mensaje" tabindex="5"  formControlName="mensaje"  class="form-control textarea"  [(ngModel)]="mensaje" name="mensaje"  ></textarea> 
-        <span *ngIf="form.controls['mensaje']?.touched && !form.controls['mensaje'].valid" class="error">
+        <textarea placeholder="Mensaje" tabindex="5"  [formControl]="mensajeControl"  class="form-control textarea"  [(ngModel)]="mensaje" name="mensaje" required ></textarea> 
+        <span *ngIf="mensajeControl?.touched && !mensajeControl.valid" class="error">
           Ingresa tu consulta
           </span>
-      </fieldset>
+      </fieldset> 
       <div class="container-buttons">
         <div class="forms-buttons">
             <label>
-                <button name="submit" type="submit"  data-submit="...Sending"  (click)="onSubmit()" [disabled]="!form.valid" >Enviar</button>
+              <button name="submit" type="submit"  data-submit="...Sending" [disabled]="!nombreControl.valid || !empresaControl.valid || !emailControl.valid || !mensajeControl.valid" (click)="onSubmit($event)" >Enviar</button>
             </label>
             <label for="">
                 <button name="delete" type="reset" >Borrar todo</button>
             </label>
           </div>
-         
       </div>
       <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="	diagnostico9dejulio.com.ar">
+      <input type="hidden" name="_next" [value]="location"> 
     </form>
   </div>

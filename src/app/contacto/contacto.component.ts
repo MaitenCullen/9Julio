@@ -1,32 +1,43 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-contacto',
   templateUrl: './contacto.component.html',
   styleUrls: ['./contacto.component.scss']
 })
-export class ContactoComponent {
+export class ContactoComponent implements OnDestroy{
+  constructor(private router: Router ) { }
+
   public nombre:string = ""
-  public empresa:string = ""
+  public provincia:string = ""
   public email:string = ""
   public mensaje:string = ""
+  public check:string|null = ""
   resultado: string = ""
 
-  formContacto = new FormGroup({
-  nombre: new FormControl(this.nombre,[Validators.required, Validators.minLength(5)]),
-  empresa: new FormControl(this.empresa, Validators.required),
-  telefono: new FormControl(''),
-  email: new FormControl(this.email, [Validators.required, Validators.email]),
-  mensaje: new FormControl(this.mensaje, [Validators.required, Validators.maxLength(900)])
- 
-});
-onSubmit() {
-  console.log(this.formContacto)
-  if (this.formContacto.valid)
-  this.resultado = "Todos los datos son válidos";
-  else
-    this.resultado! = "Hay datos inválidos en el formulario";
-  ;
-}
+  nombreControl= new FormControl(this.nombre,Validators.required);
+  provinciaControl=new FormControl(this.provincia, Validators.required);
+  telefonoControl= new FormControl('');
+  emailControl=new FormControl(this.email, [Validators.required, Validators.email]);
+  mensajeControl= new FormControl(this.mensaje, [Validators.required, Validators.maxLength(900)]);
+  checkControl= new FormControl(this.check, Validators.required);
+
+  public onchecked(event:any){
+    if (event.target.checked){
+      this.check="checked"
+    } else {
+      this.check = null
+    }
+  }
+
+  public location = window.location.href
+ public ngOnDestroy(): void {
+    this.router.navigate(['contacto'])
+  }
+  public onSubmit(event:Event){
+    event.stopPropagation()
+  }
+
 }

@@ -15,23 +15,17 @@ export class FormComponent {
     public empresa:string = ""
     public email:string = ""
     public mensaje:string = ""
-    resultado: string = ""
 
-    form = new FormGroup({
-    nombre: new FormControl(this.nombre,[Validators.required, Validators.minLength(5)]),
-    empresa: new FormControl(this.empresa, Validators.required),
-    telefono: new FormControl(''),
-    email: new FormControl(this.email, [Validators.required, Validators.email]),
-    mensaje: new FormControl(this.mensaje, [Validators.required, Validators.maxLength(900)])
-   
-  });
-  onSubmit() {
-    console.log(this.form)
-    if (this.form.valid)
-    this.resultado = "Todos los datos son válidos";
-    else
-      this.resultado! = "Hay datos inválidos en el formulario";
-    ;
-  }
+    
+    nombreControl= new FormControl(this.nombre,Validators.required);
+    empresaControl=new FormControl(this.empresa, Validators.required);
+    telefonoControl= new FormControl('');
+    emailControl=new FormControl(this.email, [Validators.required, Validators.email]);
+    mensajeControl= new FormControl(this.mensaje, [Validators.required, Validators.maxLength(900)]);
+    
+    public location = window.location.href;  
 
+    public onSubmit(event:any){
+      event.preventDefault()
+    }
 }
