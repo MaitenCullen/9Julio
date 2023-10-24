@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormControl, FormGroup, Validators} from '@angular/forms';
+import { EmailServiceService } from '../email-service.service';
 
 
 @Component({
@@ -11,6 +12,13 @@ import { FormControl, FormGroup, Validators} from '@angular/forms';
 
 
 export class FormComponent {
+  public location: string;
+
+  constructor(private  serviceName:EmailServiceService) {
+    // Asigna el valor que desees a la variable location
+    this.location = 'gracias.component.html';
+
+  }
     public nombre:string = ""
     public empresa:string = ""
     public email:string = ""
@@ -23,9 +31,14 @@ export class FormComponent {
     emailControl=new FormControl(this.email, [Validators.required, Validators.email]);
     mensajeControl= new FormControl(this.mensaje, [Validators.required, Validators.maxLength(900)]);
     
-    public location = window.location.href;  
+    // public location = window.location.href;  
+
+    sendEmail():void{
+      this.serviceName.performGetEx().subscribe(( (v) => console.log(v, "respuesta")))
+    }
 
     public onSubmit(event:any){
       event.preventDefault()
+      console.log("botonapretado")
     }
 }
