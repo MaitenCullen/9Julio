@@ -3,8 +3,10 @@
     display: flex;
     justify-content: center;
     padding: 20px;
+    margin-bottom: 30%;
 }
 .container-preguntas{
+    margin-bottom: 5rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -198,11 +200,11 @@
         h6, p{
             @include text-img-home;
         }
-        h6{
+        h6, a{
             font-size: 1.3rem;
         }
         p{
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
     }
     .div-preguntas-00{
@@ -212,6 +214,9 @@
         }
         .div-preguntas{
             width: 90%;
+            p{
+                font-size: 1rem;
+            }
         }
     }
 
@@ -222,6 +227,9 @@
         }
         .div-preguntas{
             width: 90%;
+            p{
+                font-size: 1rem;
+            }
         }
         .consulta-text{
             width: 100%;

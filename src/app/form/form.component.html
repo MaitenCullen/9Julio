@@ -1,38 +1,38 @@
 <div class="container" >  
-    <form id="contact" action="index.php"   method="POST"  >
+    <form id="contact" action="index.php"   method="POST" [formGroup]="datos" >
       <h3>Para mas información, le pedimos 
         que por favor complete el formulario.</h3>
       <fieldset>
-        <input placeholder="Nombre y apellido" type="text" tabindex="1" [formControl]="nombreControl" class="form-control nombre" name="nombre" required [(ngModel)]="nombre">
-        <span *ngIf="nombreControl?.touched && !nombreControl.valid" class="error">
+        <input placeholder="Nombre y apellido" type="text" tabindex="1" formControlName="nombre" class="form-control nombre" name="nombre" required >
+        <!-- <span *ngIf="nombreControl?.touched && !nombreControl.valid" class="error">
          Ingresa nombre y apellido
-        </span>
+        </span> -->
       </fieldset>
       <fieldset>
-        <input placeholder="Empresa:" type="text" tabindex="2" [formControl]="empresaControl" class="form-control empresa" [(ngModel)]="empresa" name="empresa" required>
-        <span *ngIf="empresaControl?.touched && !empresaControl.valid" class="error">
+        <input placeholder="Empresa:" type="text" tabindex="2"  formControlName="empresa" class="form-control empresa"required>
+        <!-- <span *ngIf="empresaControl?.touched && !empresaControl.valid" class="error">
           Nombre de tu empresa
-         </span>
+         </span> -->
       </fieldset>
       <fieldset>
-        <input placeholder="Teléfono" type="tel" tabindex="3"  [formControl]="telefonoControl" class="form-control telefono" name="telefono" required>
+        <input placeholder="Teléfono" type="tel" tabindex="3"   formControlName="telefono" class="form-control telefono" name="telefono" required>
       </fieldset>
       <fieldset >
-        <input placeholder="Mail" type="email" tabindex="4"  [formControl]="emailControl" name="email" required class="form-control mail"  [(ngModel)]="email" >
-        <span *ngIf="emailControl?.touched && !emailControl.valid" class="error">
+        <input placeholder="Mail" type="email" tabindex="4"   formControlName="emailCliente" name="emailCliente" required class="form-control mail"   >
+        <!-- <span *ngIf="emailControl?.touched && !emailControl.valid" class="error">
          Ingresa tu email <br/>
-         </span>
+         </span> -->
       </fieldset>
       <fieldset>
-        <textarea placeholder="Mensaje" tabindex="5"  [formControl]="mensajeControl"  class="form-control textarea"  [(ngModel)]="mensaje" name="mensaje" required ></textarea> 
-        <span *ngIf="mensajeControl?.touched && !mensajeControl.valid" class="error">
+        <textarea placeholder="Mensaje" tabindex="5"   formControlName="mensaje" class="form-control textarea"   required ></textarea> 
+        <!-- <span *ngIf="mensajeControl?.touched && !mensajeControl.valid" class="error">
           Ingresa tu consulta
-          </span>
+          </span> -->
       </fieldset> 
       <div class="container-buttons">
         <div class="forms-buttons">
             <label>
-              <button name="submit" type="submit"  data-submit="...Sending" [disabled]="!nombreControl.valid || !empresaControl.valid || !emailControl.valid || !mensajeControl.valid"  (click)= "sendEmail()" >Enviar</button>
+              <button name="submit" type="submit"  data-submit="...Sending" (click)="sendEmail()" >Enviar</button>
             </label>
             <label for="">
                 <button name="delete" type="reset" >Borrar todo</button>
