@@ -228,6 +228,7 @@
         @include white-header;
         font-size: 1.6rem;
         text-align: center;
+       font-weight: 600;
     }
     }
 
@@ -247,6 +248,7 @@
             text-align: justify;
             padding: 0;
             margin: 0;
+            font-weight: 600;
         }
     }
 .container-ul{
@@ -347,6 +349,7 @@
             @include white-header;
             font-size: 1.2rem;
             text-align: center;
+            font-weight: 600;
         }
         }
         
@@ -366,6 +369,7 @@
                 text-align: justify;
                 padding: 0;
                 margin: 0;
+                font-weight: 600;
             }
         }
     }
