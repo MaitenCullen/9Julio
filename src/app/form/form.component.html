@@ -1,45 +1,45 @@
 <div class="container" >  
-    <form id="contact"  method="POST" action="https://formsubmit.co/info@diagnostico9dejulio.com.ar"   >
-      <h3>Para mas información, le pedimos 
-        que por favor complete el formulario.</h3>
-      <fieldset>
-        <input placeholder="Nombre y apellido" type="text" tabindex="1" [formControl]="nombreControl" class="form-control nombre" name="nombre" required [(ngModel)]="nombre">
-        <span *ngIf="nombreControl?.touched && !nombreControl.valid" class="error">
-         Ingresa nombre y apellido
+  <form id="contact"  method="POST" action="https://formsubmit.co/info@diagnostico9dejulio.com.ar"   >
+    <h3>Para mas información, le pedimos 
+      que por favor complete el formulario.</h3>
+    <fieldset>
+      <input placeholder="Nombre y apellido" type="text" tabindex="1" [formControl]="nombreControl" class="form-control nombre" name="nombre" required [(ngModel)]="nombre">
+      <span *ngIf="nombreControl?.touched && !nombreControl.valid" class="error">
+       Ingresa nombre y apellido
+      </span>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Empresa:" type="text" tabindex="2" [formControl]="empresaControl" class="form-control empresa" [(ngModel)]="empresa" name="empresa" required>
+      <span *ngIf="empresaControl?.touched && !empresaControl.valid" class="error">
+        Nombre de tu empresa
+       </span>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Teléfono" type="tel" tabindex="3"  [formControl]="telefonoControl" class="form-control telefono" name="telefono" required>
+    </fieldset>
+    <fieldset >
+      <input placeholder="Mail" type="email" tabindex="4"  [formControl]="emailControl" name="email" required class="form-control mail"  [(ngModel)]="email" >
+      <span *ngIf="emailControl?.touched && !emailControl.valid" class="error">
+       Ingresa tu email <br/>
+       </span>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Mensaje" tabindex="5"  [formControl]="mensajeControl"  class="form-control textarea"  [(ngModel)]="mensaje" name="mensaje" required ></textarea> 
+      <span *ngIf="mensajeControl?.touched && !mensajeControl.valid" class="error">
+        Ingresa tu consulta
         </span>
-      </fieldset>
-      <fieldset>
-        <input placeholder="Empresa:" type="text" tabindex="2" [formControl]="empresaControl" class="form-control empresa" [(ngModel)]="empresa" name="empresa" required>
-        <span *ngIf="empresaControl?.touched && !empresaControl.valid" class="error">
-          Nombre de tu empresa
-         </span>
-      </fieldset>
-      <fieldset>
-        <input placeholder="Teléfono" type="tel" tabindex="3"  [formControl]="telefonoControl" class="form-control telefono" name="telefono" required>
-      </fieldset>
-      <fieldset >
-        <input placeholder="Mail" type="email" tabindex="4"  [formControl]="emailControl" name="email" required class="form-control mail"  [(ngModel)]="email" >
-        <span *ngIf="emailControl?.touched && !emailControl.valid" class="error">
-         Ingresa tu email <br/>
-         </span>
-      </fieldset>
-      <fieldset>
-        <textarea placeholder="Mensaje" tabindex="5"  [formControl]="mensajeControl"  class="form-control textarea"  [(ngModel)]="mensaje" name="mensaje" required ></textarea> 
-        <span *ngIf="mensajeControl?.touched && !mensajeControl.valid" class="error">
-          Ingresa tu consulta
-          </span>
-      </fieldset> 
-      <div class="container-buttons">
-        <div class="forms-buttons">
-            <label>
-              <button name="submit" type="submit"  data-submit="...Sending" [disabled]="!nombreControl.valid || !empresaControl.valid || !emailControl.valid || !mensajeControl.valid"  (click)="onSubmit($event)" >Enviar</button>
-            </label>
-            <label for="">
-                <button name="delete" type="reset" >Borrar todo</button>
-            </label>
-          </div>
-      </div>
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" [value]="location"> 
-    </form>
-  </div>
+    </fieldset> 
+    <div class="container-buttons">
+      <div class="forms-buttons">
+          <label>
+            <button name="submit" type="submit"  data-submit="...Sending" [disabled]="!nombreControl.valid || !empresaControl.valid || !emailControl.valid || !mensajeControl.valid"  (click)="onSubmit($event)" >Enviar</button>
+          </label>
+          <label for="">
+              <button name="delete" type="reset" >Borrar todo</button>
+          </label>
+        </div>
+    </div>
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" [value]="location"> 
+  </form>
+</div>

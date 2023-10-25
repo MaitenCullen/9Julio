@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormControl, Validators} from '@angular/forms';
+import * as Notiflix from 'notiflix';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 
@@ -38,3 +39,4 @@ export class FormComponent {
       }, 1000);
      }
 }
+

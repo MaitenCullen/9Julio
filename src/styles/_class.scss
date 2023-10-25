@@ -275,7 +275,7 @@
                 align-items: center;
             }
             h5{
-                font-size: 1rem;
+                font-size: 1.2rem;
                 margin: 0;
             }
             h4{
@@ -293,7 +293,7 @@
                 justify-content: space-between;
                 text-align: center;
                 p{
-                    font-size: 1rem;
+                    font-size: 1.1rem;
                     text-align: center;
                 }
             }
@@ -318,7 +318,7 @@
             margin: 0;
         }
         li{
-            font-size: 0.8rem;
+            font-size: 1rem;
         }
     }
     .div-button{
@@ -358,7 +358,7 @@
             }
             p{
                 @include white-header;
-                font-size: 0.8rem;
+                font-size: 1rem;
                 text-align: justify;
                 padding: 0;
                 margin: 0;

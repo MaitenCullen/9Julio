@@ -3,7 +3,7 @@
 
 .container-sabermas-oftalmologia{
     margin: 3% 0 3% 0;
-    background-color: $grey-base;
+    background-color: $light-grey;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -51,6 +51,7 @@
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
+ 
     .title-sabermas{
         width: 80%;
     }
@@ -85,7 +86,7 @@
 @media screen and (min-width: 200px) and (max-width: 649px) {
 
     .container-sabermas-oftalmologia{
-        width: 80%;
+        width: 100%;
         display: flex;
         justify-content: space-around;
         flex-direction: column;
