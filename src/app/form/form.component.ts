@@ -1,9 +1,9 @@
+
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { FormControl, FormGroup, Validators} from '@angular/forms';
-import { EmailServiceService } from '../email-service.service';
-import * as Notiflix from 'notiflix';
-import { HttpHeaders } from '@angular/common/http';
+import { FormControl, Validators} from '@angular/forms';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
+
 
 @Component({
   selector: 'app-form',
@@ -13,55 +13,29 @@ import { HttpHeaders } from '@angular/common/http';
 
 
 export class FormComponent {
-  public location: string;
- title = 'envioCorreos'
+ 
 
- datos:FormGroup;
-  constructor(private  httpClient:HttpClient) {
+  constructor(private http:HttpClient) {
 
-    this.datos= new FormGroup({
-      nombre: new FormControl ('', Validators.required),
-      empresa: new FormControl ('', Validators.required),
-      emailCliente: new FormControl ('', [Validators.required, Validators.email]),
-      telefono: new FormControl ('', Validators.required),
-      mensaje: new FormControl ('', Validators.required)
-
-    })
-    this.location = 'gracias.component.html';
 
   }
-    // public nombre:string = ""
-    // public empresa:string = ""
-    // public email:string = ""
-    // public mensaje:string = ""
+    public nombre:string = ""
+    public empresa:string = ""
+    public email:string = ""
+    public mensaje:string = ""
 
     
-    // nombreControl= new FormControl(this.nombre,Validators.required);
-    // empresaControl=new FormControl(this.empresa, Validators.required);
-    // telefonoControl= new FormControl('');
-    // emailControl=new FormControl(this.email, [Validators.required, Validators.email]);
-    // mensajeControl= new FormControl(this.mensaje, [Validators.required, Validators.maxLength(900)]);
+    nombreControl= new FormControl(this.nombre,Validators.required);
+    empresaControl=new FormControl(this.empresa, Validators.required);
+    telefonoControl= new FormControl('');
+    emailControl=new FormControl(this.email, [Validators.required, Validators.email]);
+    mensajeControl= new FormControl(this.mensaje, [Validators.required, Validators.maxLength(900)]);
     
-    // public location = window.location.href;  
+     public location = window.location.href;  
 
-    sendEmail():void{
-      Notiflix.Loading.standard('Cargando...')
-      let params = {
-        email:this.datos.value.emailCliente,
-        empresa:this.datos.value.empresa,
-        telefono:this.datos.value.telefono,
-        mensaje:this.datos.value.mensaje,
-      }
-      const headers = new HttpHeaders({
-        'Content-Type': 'application/json',
-      });
-      const options = {
-        headers: headers,
-        withCredentials: false,
-      };
-      this.httpClient.post('http://diagnostico9dejulio.com.ar/send',params, options).subscribe(resp=> {
-        Notiflix.Loading.remove();
-        Notiflix.Notify.success("Mensaje Enviado");
-      })
-    }
+     public onSubmit(event:any){
+      setTimeout(() => {
+        Notify.success('Mensaje enviado');
+      }, 1000);
+     }
 }
