@@ -1,22 +1,21 @@
 
-
 $background: #ffffff;
 $blue-base: #0f3858;
 $grey-base: #b3b3b3;
 $light-grey:#e6e6e6;
 
-@font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    src: url("/public/fonts/Montserrat-Regular.ttf") format("truetype");
-}
-@font-face {
-    font-family: 'Montserrat-bold';
-    font-style: normal;
-    font-weight: bold;
-    src: url("/public/fonts/Montserrat-Bold.ttf") format("truetype");
-}
+// @font-face {
+//     font-family: 'Montserrat';
+//     font-style: normal;
+//     font-weight: 400;
+//     src: url("/public/fonts/Montserrat-Regular.ttf") format("truetype");
+// }
+// @font-face {
+//     font-family: 'Montserrat-bold';
+//     font-style: normal;
+//     font-weight: bold;
+//     src: url("/public/fonts/Montserrat-Bold.ttf") format("truetype");
+// }
 
 @mixin blue-button {
     background-color: #0f3858;
@@ -27,38 +26,45 @@ $light-grey:#e6e6e6;
     padding: 6px 30px 6px 30px;
     border-radius: 7px;
     border: none;
+    font-weight: 600;
+    letter-spacing:1px
 }
 @mixin navbar {
     color: $blue-base;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
-    
+    font-weight: 600;
+    letter-spacing:1px
     
 }
 @mixin white-header {
     color: $blue-base;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing:1px
 }
 @mixin blue-header {
     color: $blue-base;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing:1px
+
 }
 @mixin text-img-home{
     color: $blue-base;
     font-family: 'Montserrat', sans-serif;
     text-align: start;
+    font-weight: 600;
+    letter-spacing:1px
+
 }
-@mixin white-text{
-    color: $background;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
-}
+
 @mixin title-nosotros{
     color: $blue-base;
     font-family: 'Montserrat-bold',sans-serif;
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 600;
     line-height: inherit;
 }
 

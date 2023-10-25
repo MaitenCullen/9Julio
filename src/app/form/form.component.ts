@@ -52,8 +52,6 @@ export class FormComponent {
         telefono:this.datos.value.telefono,
         mensaje:this.datos.value.mensaje,
       }
-
-      console.log(params)
       const headers = new HttpHeaders({
         'Content-Type': 'application/json',
       });
@@ -61,15 +59,9 @@ export class FormComponent {
         headers: headers,
         withCredentials: false,
       };
-      this.httpClient.post('http://localhost:3000/send',params, options).subscribe(resp=> {
-        console.log(resp)
+      this.httpClient.post('http://diagnostico9dejulio.com.ar/send',params, options).subscribe(resp=> {
         Notiflix.Loading.remove();
         Notiflix.Notify.success("Mensaje Enviado");
       })
     }
-
-    // public onSubmit(event:any){
-    //   event.preventDefault()
-    //   console.log("botonapretado")
-    // }
 }

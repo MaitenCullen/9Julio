@@ -65,9 +65,11 @@
             }
             h4{
                 font-size: 2.5rem;
+                line-height: 70px;
             }
             p{
-                font-size: 2rem;
+                font-size: 1.8rem;
+                line-height: 35px;
             }
         }
         .container-laboral{
@@ -94,9 +96,11 @@
             }
             h4{
                 font-size: 2.5rem;
+                line-height: 70px;
             }
             p{
-                font-size: 2rem;
+                font-size: 1.8rem;
+                line-height: 35px;
             }
 
         }
@@ -166,8 +170,7 @@
         color: $blue-base;
         font-size: 2rem;
         text-align: center;
-      
-
+        font-weight: 600;
     }
     .div-servicios{
         display: flex;

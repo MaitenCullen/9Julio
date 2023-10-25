@@ -10,35 +10,35 @@
                 Muchas gracias! 
             </p>
             <p>Tambien podes encontrarnos en <strong>Lima 631, CABA .</strong></p>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.541744376712!2d-58.384407823482626!3d-34.61574765813493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad797ca8245%3A0xd03136dc23bcab18!2sLima%20631%2C%20C1072%20CABA!5e0!3m2!1ses!2sar!4v1697642264580!5m2!1ses!2sar" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.541744376712!2d-58.384407823482626!3d-34.61574765813493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad797ca8245%3A0xd03136dc23bcab18!2sLima%20631%2C%20C1072%20CABA!5e0!3m2!1ses!2sar!4v1697642264580!5m2!1ses!2sar" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-          <div class="container" >  
-            <form id="contact" action="https://formsubmit.co/info@diagnostico9dejulio.com.ar"  method="POST"  >
+          <div class="" >  
+            <form id="contact" [formGroup]="datos" action="index.php" method="POST"  >
               <h3>Para mas información, le pedimos 
                 que por favor complete el formulario.</h3>
               <fieldset>
-                <input placeholder="Nombre y apellido" type="text" tabindex="1" [formControl]="nombreControl" class="form-control nombre" name="nombre" required [(ngModel)]="nombre">
-                <span *ngIf="nombreControl?.touched && !nombreControl.valid" class="error">
+                <input placeholder="Nombre y apellido" type="text" tabindex="1" formControlName="nombre" class="form-control nombre" name="nombre" required >
+                <!-- <span *ngIf="nombreControl?.touched && !nombreControl.valid" class="error">
                   Ingresa nombre y apellido
-                 </span>
+                 </span> -->
               </fieldset>
               <fieldset>
-                <input placeholder="Provincia / localidad"  type="text" tabindex="2" [formControl]="provinciaControl" class="form-control empresa" [(ngModel)]="provincia" name="provincia" required>
-                <span *ngIf="provinciaControl?.touched && !provinciaControl.valid" class="error">
+                <input placeholder="Provincia / localidad"  type="text" tabindex="2" formControlName="provincia" class="form-control empresa" name="provincia" required>
+                <!-- <span *ngIf="provinciaControl?.touched && !provinciaControl.valid" class="error">
                  Ingresa tu localidad
-                 </span>
+                 </span> -->
               </fieldset>
               <fieldset>
-                <input placeholder="Teléfono" type="tel" tabindex="3"  [formControl]="telefonoControl" class="form-control telefono" name="telefono" required>
+                <input placeholder="Teléfono" type="tel" tabindex="3"  formControlName="telefono" class="form-control telefono" name="telefono" required>
               </fieldset>
               <fieldset >
-                <input placeholder="Mail" type="email" tabindex="4"  [formControl]="emailControl" name="email" required class="form-control mail"  [(ngModel)]="email" >
-                <span *ngIf="emailControl?.touched && !emailControl.valid" class="error">
+                <input placeholder="Mail" type="email" tabindex="4"  formControlName="emailCliente" name="email" required class="form-control mail" >
+                <!-- <span *ngIf="emailControl?.touched && !emailControl.valid" class="error">
                   Ingresa tu email <br/>
-                  </span>
+                  </span> -->
               </fieldset>
               <div class="form-floating mb-3">
-                <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="select">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="select" formControlName="select">
                   <option selected>...</option>
                   <option value="Consultorios medicos"> Consultorios médicos</option>
                   <option value="Diagnostico por imagenes"> Diagnóstico por imágenes</option>
@@ -47,29 +47,29 @@
                 <label for="floatingSelect">Motivo de la consulta</label>
               </div>
               <fieldset>
-                <textarea placeholder="Mensaje" tabindex="5" [formControl]="mensajeControl"  class="form-control textarea"  [(ngModel)]="mensaje" name="mensaje" required></textarea> 
-                <span *ngIf="mensajeControl?.touched && !mensajeControl.valid" class="error">
+                <textarea placeholder="Mensaje" tabindex="5" formControlName="mensaje" class="form-control textarea"  name="mensaje" required></textarea> 
+                <!-- <span *ngIf="mensajeControl?.touched && !mensajeControl.valid" class="error">
                   Ingresa tu consulta
-                  </span>
+                  </span> -->
               </fieldset>
               <div class="container-buttons">
                 <div class="checkbox-wrapper-40">
                     <label>
-                      <input type="checkbox" [formControl]="checkControl" (change)="onchecked($event)" />
+                      <input type="checkbox" />
                       <span class="checkbox">No soy robot</span>
                     </label>
                   </div>
                 <div class="forms-buttons">
                     <label>
-                        <button name="submit" type="submit" id="contact-submit" class="blue-button" data-submit="...Sending" [disabled]="!nombreControl.valid || !provinciaControl.valid || !emailControl.valid || !mensajeControl.valid || !checkControl.valid" >Enviar</button>
+                        <button name="submit" type="submit" id="contact-submit" class="blue-button" data-submit="...Sending" (click)="sendEmail()" >Enviar</button>
                     </label>
                     <label for="">
                         <button name="reset" type="reset" id="contact-submit" class="blue-button" data-submit="...Sending">Borrar todo</button>
                     </label>
                   </div>
               </div>
-              <input type="hidden" name="_captcha" value="false">
-               <input type="hidden" name="_next" [value]="location"> 
+              <!-- <input type="hidden" name="_captcha" value="false">
+               <input type="hidden" name="_next" [value]="location">  -->
             </form>
           </div>
     </div>

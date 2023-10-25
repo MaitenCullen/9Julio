@@ -34,7 +34,7 @@
     width: 100%;
     p{
         @include blue-header;
-        font-size:1.5rem;
+        font-size:1.4rem;
     }
     h4{
         @include title-nosotros;
@@ -53,7 +53,7 @@
     width: 100%;
     p{
         @include blue-header;
-        font-size:1.5rem;
+        font-size:1.4rem;
     }
     h4{
         @include title-nosotros;
@@ -73,10 +73,11 @@
         justify-content: flex-start;
     }
     .div-text-nosotros-final{
-        width: 80%;
+        width: 100%;
+        margin-bottom: 10%;
         p{
             @include blue-header;
-            font-size:1.5rem;
+            font-size:1.4rem;
         }
         h4{
             @include title-nosotros;
