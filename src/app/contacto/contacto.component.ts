@@ -1,13 +1,14 @@
-import { Component, OnDestroy } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Component } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
+import {  Router } from '@angular/router';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 @Component({
   selector: 'app-contacto',
   templateUrl: './contacto.component.html',
   styleUrls: ['./contacto.component.scss']
 })
-export class ContactoComponent implements OnDestroy{
+export class ContactoComponent {
   constructor(private router: Router ) { }
 
   public nombre:string = ""
@@ -33,11 +34,12 @@ export class ContactoComponent implements OnDestroy{
   }
 
   public location = window.location.href
- public ngOnDestroy(): void {
-    this.router.navigate(['contacto'])
-  }
-  public onSubmit(event:Event){
-    event.stopPropagation()
-  }
+
+
+  public onSubmit(event:any){
+    setTimeout(() => {
+      Notify.success('Mensaje enviado');
+    }, 1000);
+   }
 
 }

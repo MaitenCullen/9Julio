@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { FormControl, FormGroup, Validators} from '@angular/forms';
-import { EmailServiceService } from '../email-service.service';
+import { FormControl, Validators} from '@angular/forms';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 
 @Component({
@@ -12,11 +12,10 @@ import { EmailServiceService } from '../email-service.service';
 
 
 export class FormComponent {
-  public location: string;
+ 
 
-  constructor(private  serviceName:EmailServiceService) {
-    // Asigna el valor que desees a la variable location
-    this.location = 'gracias.component.html';
+  constructor(private http:HttpClient) {
+
 
   }
     public nombre:string = ""
@@ -31,14 +30,11 @@ export class FormComponent {
     emailControl=new FormControl(this.email, [Validators.required, Validators.email]);
     mensajeControl= new FormControl(this.mensaje, [Validators.required, Validators.maxLength(900)]);
     
-    // public location = window.location.href;  
+     public location = window.location.href;  
 
-    sendEmail():void{
-      this.serviceName.performGetEx().subscribe(( (v) => console.log(v, "respuesta")))
-    }
-
-    public onSubmit(event:any){
-      event.preventDefault()
-      console.log("botonapretado")
-    }
+     public onSubmit(event:any){
+      setTimeout(() => {
+        Notify.success('Mensaje enviado');
+      }, 1000);
+     }
 }

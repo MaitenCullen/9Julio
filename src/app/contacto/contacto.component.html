@@ -61,7 +61,7 @@
                   </div>
                 <div class="forms-buttons">
                     <label>
-                        <button name="submit" type="submit" id="contact-submit" class="blue-button" data-submit="...Sending" [disabled]="!nombreControl.valid || !provinciaControl.valid || !emailControl.valid || !mensajeControl.valid || !checkControl.valid" >Enviar</button>
+                        <button name="submit" type="submit" id="contact-submit" class="blue-button" data-submit="...Sending" [disabled]="!nombreControl.valid || !provinciaControl.valid || !emailControl.valid || !mensajeControl.valid || !checkControl.valid" (click)="onSubmit($event)">Enviar</button>
                     </label>
                     <label for="">
                         <button name="reset" type="reset" id="contact-submit" class="blue-button" data-submit="...Sending">Borrar todo</button>

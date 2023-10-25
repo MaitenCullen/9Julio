@@ -13,9 +13,6 @@ require 'vendor/autoload.php';
 require 'phpmailer/src/Exception.php';
 require 'phpmailer/src/PHPMailer.php';
 require 'phpmailer/src/SMTP.php';
-// require 'path/to/phpmailer/src/Exception.php';
-// require 'path/to/phpmailer/src/PHPMailer.php';
-// require 'path/to/phpmailer/src/SMTP.php';
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -25,15 +22,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $mensaje = $_POST["mensaje"];
 
-//Create an instance; passing `true` enables exceptions
+
 $mail = new PHPMailer(true);
 
 try {
-    //Server settings
     $mail->SMTPDebug = 2;  
     $mail->Debugoutput = 'html';                    //Enable verbose debug output con 0 se desactiva, protocolo seguridad
     $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'smtp.c2172200.ferozo.com';                     //Set the SMTP server to send through
+    $mail->Host       = 'c2172200.ferozo.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
     $mail->Username   = 'info@diagnostico9dejulio.com.ar';                     //SMTP username
     $mail->Password   = 'Reig87Tar/';                               //SMTP password
