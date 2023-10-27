@@ -146,8 +146,10 @@
         }
     }
 }
-@media screen and (min-width: 650px) and (max-width: 1240px) {
-
+@media screen and (min-width: 850px) and (max-width: 1240px) {
+    .container-nosotros{
+        margin-bottom: 5%;
+    }
     .background-nosotros0{
         img{
             width: 42%;
@@ -206,6 +208,7 @@
         }
        
          .div-text-nosotros-final{
+            margin-bottom: 10px;
             .rombo-gris{
                 width: 5%;
                 margin-top: 3px;
@@ -219,13 +222,124 @@
             h4{
                 font-size: 1.4rem;
                 margin-top: 3px;
+                br{
+                    display: none;
+                }
              }
          }
         
     }
 }
+@media screen and (min-width: 560px) and (max-width: 849px) {
+    .container-nosotros{
+        margin-bottom: 0;
+    }
+    .background-nosotros0{
+        position: relative;
+        justify-content: space-between;
+        img{
+            width: 40%;
+            top: 0;
+            position: absolute;
+            right: 0;
+            z-index: 0;
+        }
+        p{
+            font-size: 0.9rem;
+            width: 80%;
+            padding: 10px;
+            text-align: left;
+            z-index: 1;
+            br{
+                display: none;
+            }
+          
+        }
+    }
+    
+    .background-nosotros01{
+        .img-nosotros01{
+            width: 35%;
+        }
+        p{
+            font-size:0.8rem;
+            br{
+                display: none;
+            }
+        }
+        h4{
+            font-size: 1rem;
+            margin-top: 3px;
+         }
+         .rombo-gris{
+            width: 20px;
+            margin-top: 4px;
+         }
+    }
+    .background-nosotros02{
+        p{
+            font-size:0.8rem;
+            br{
+                display: none;
+            }
+        }
+        .img-nosotros02{
+            width: 35%;
+        }
+        h4{
+            font-size: 1rem;
+            margin-top: 3px;
+         }
+         .rombo-gris{
+            width: 20px;
+            margin-top: 7px;
+         }
+    }
+    .background-nosotros03{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .div-text-final{
+            justify-content: center;
+            .rombo-gris{
+                width: 20px;
+                margin-top: 3px;
+                margin-left: 7px;
+                position: relative;
+                z-index: 0;
+             }
+        }
+        .div-text-nosotros-final{
+            margin-bottom: 0;
+            width: 70%;
+             p{
+                font-size:0.8rem;
+                br{
+                    display: none;
+                 }
+            }
+            h4{
+                font-size: 1em;
+                margin-top: 3px;
+                br{
+                    display: none;
+                }
+                
+             }
+             
+         }
+    
+      
+        .img-nosotros03a{
+          width: 40%;
 
-@media screen and (min-width: 200px) and (max-width: 649px) {
+        }
+        .img-nosotros03{
+            display: none;
+        }
+    }
+}
+@media screen and (min-width: 200px) and (max-width: 559px) {
     .container-nosotros{
         margin-bottom: 40%;
     }
@@ -315,6 +429,9 @@
             h4{
                 font-size: 1em;
                 margin-top: 3px;
+                br{
+                    display: none;
+                }
                 
              }
              

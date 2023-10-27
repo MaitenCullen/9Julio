@@ -232,7 +232,7 @@
         a{
             text-decoration: none;
             @include blue-header;
-            font-size: 0.5rem;
+            font-size: 0.8rem;
         }
         .div-rrss{
             width: 40%;
@@ -245,17 +245,18 @@
     
         }
         .div-paciente{
-            width: 60%;
+            width: 80%;
             display: flex;
             justify-content: space-evenly;
             div {
+                margin: 5px;
                 img{
               
                    margin:4px
                 }
                 padding: 5px;
                 background-color: $grey-base;
-                height: 30px;
+                height: 35px;
                 text-align: center;
                 display: flex;
                 align-items: center;
@@ -270,32 +271,6 @@
             justify-content: center; 
             .div-header-text{
                 display: none;
-            //     width: 100%;
-            //     flex-direction: column;
-            //     hr{
-            //         margin: 0.5rem;
-            //         width: 50%;
-            //         background-color: $blue-base;
-            //         color: $blue-base;
-            //         border: 2px solid $blue-base;
-            //         opacity: 100%;
-            //     }
-            //     div{
-            //         width: 100%;
-            //         align-items: center;
-            //      }
-            //      img{
-            //        display: none;
-            //     }
-              
-            // }
-            // h3,h4{
-            //     font-size: 1rem;
-            //     line-height: 20px;
-            //     }
-            //     h5{
-            //         font-size: 1.4rem;
-            // }
         }
         .div-header-text-mobile{
             display: block;
@@ -319,7 +294,7 @@
                 img{
                  display: none;
                 }
-            h5{
+            p{
                 font-size: 1rem;
                 margin:0 5px 0 5px;
                 }
@@ -351,7 +326,7 @@
 @media screen and (min-width: 376px) and (max-width: 499px) {
     .blue-header{
         background-color: $blue-base;
-        height: 80px;
+        height: 85px;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
@@ -359,7 +334,7 @@
         a{
             text-decoration: none;
             @include blue-header;
-            font-size: 0.5rem;
+            font-size: 0.8rem;
         }
         .div-rrss{
             width: 40%;
@@ -372,17 +347,18 @@
     
         }
         .div-paciente{
-            width: 60%;
+            width: 80%;
             display: flex;
             justify-content: space-evenly;
             div {
+                margin: 5px;
                 img{
               
                    margin:4px
                 }
-                padding: 5px;
+                padding: 8px;
                 background-color: $grey-base;
-                height: 30px;
+                height: 40px;
                 text-align: center;
                 display: flex;
                 align-items: center;
@@ -420,7 +396,7 @@
                 img{
                  display: none;
                 }
-            h5{
+            p{
                 font-size: 1rem;
                 margin:0 5px 0 5px;
                 }
@@ -460,7 +436,7 @@
         a{
             text-decoration: none;
             @include blue-header;
-            font-size: 0.5rem;
+            font-size: 0.8rem;
         }
         .div-rrss{
             width: 40%;
@@ -473,17 +449,18 @@
     
         }
         .div-paciente{
-            width: 60%;
+            width: 80%;
             display: flex;
             justify-content: space-evenly;
             div {
+                margin: 5px;
                 img{
               
                    margin:4px
                 }
                 padding: 5px;
                 background-color: $grey-base;
-                height: 30px;
+                height: 35px;
                 text-align: center;
                 display: flex;
                 align-items: center;
@@ -515,14 +492,14 @@
                  margin-right: 3px;
              }
             h3,h4{
-                font-size: 0.5rem;
+                font-size: 0.8rem;
                 line-height: 20px;
                 letter-spacing: 0;
                 }
                 img{
                  display: none;
                 }
-            h5{
+            p{
                 font-size: 1rem;
                 margin:0 5px 0 5px;
                 }
