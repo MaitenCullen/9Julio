@@ -1,6 +1,6 @@
 
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { FormControl, Validators} from '@angular/forms';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
@@ -33,6 +33,10 @@ export class FormComponent {
     
      public location = window.location.href;  
 
+
+
+
+
      public onSubmit(event:any){
         const data = {
           nombre: this.nombre,
@@ -40,8 +44,13 @@ export class FormComponent {
           email: this.email,
           mensaje: this.mensaje
         };
+
+        const headers = new HttpHeaders({
+          'Content-Type': 'application/json' // Establece el tipo de contenido como JSON
+        });
+
         const backendURL = 'https://server-mail.vercel.app/send'
-          this.http.post(backendURL, data).subscribe(
+          this.http.post(backendURL, data, { headers: headers }).subscribe(
           (response) => {
             console.log('Respuesta del servidor:', response);
             setTimeout(() => {
