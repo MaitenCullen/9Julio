@@ -45,12 +45,21 @@ export class FormComponent {
           mensaje: this.mensaje
         };
 
+
         const headers = new HttpHeaders({
           'Content-Type': 'application/json'
         });
 
         const backendURL = 'https://server-mail.vercel.app/send'
-          this.http.post(backendURL, data, { headers: headers }).subscribe(
+
+        const requestOptions = {
+          headers: headers,
+          method: 'POST', 
+          body: JSON.stringify(data) 
+        };
+
+
+          this.http.post(backendURL, data, requestOptions).subscribe(
           (response) => {
             console.log('Respuesta del servidor:', response);
             setTimeout(() => {
