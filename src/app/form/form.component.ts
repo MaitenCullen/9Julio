@@ -37,7 +37,8 @@ export class FormComponent {
 
 
 
-     public onSubmit(event:any){
+     public onSubmit(event:Event){
+      event.preventDefault()
         const data = {
           nombre: this.nombre,
           empresa: this.empresa,
@@ -62,6 +63,7 @@ export class FormComponent {
 
 
           this.http.post(url, data, requestOptions).subscribe(
+
           (response) => {
             console.log('Respuesta del servidor:', response);
             setTimeout(() => {
