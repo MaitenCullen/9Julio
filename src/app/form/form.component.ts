@@ -34,8 +34,23 @@ export class FormComponent {
      public location = window.location.href;  
 
      public onSubmit(event:any){
-      setTimeout(() => {
-        Notify.success('Mensaje enviado');
-      }, 1000);
+        const data = {
+          nombre: this.nombre,
+          empresa: this.empresa,
+          email: this.email,
+          mensaje: this.mensaje
+        };
+        const backendURL = 'https://server-mail.vercel.app/send'
+          this.http.post(backendURL, data).subscribe(
+          (response) => {
+            console.log('Respuesta del servidor:', response);
+            setTimeout(() => {
+              Notify.success('Mensaje enviado');
+            }, 1000);
+          },
+          (error) => {
+            console.error('Error en la solicitud POST:', error);
+          }
+        );
      }
 }
