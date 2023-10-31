@@ -46,10 +46,10 @@ export class FormComponent {
         };
 
         const headers = new HttpHeaders({
-          'Content-Type': 'application/json' // Establece el tipo de contenido como JSON
+          'Content-Type': 'application/json'
         });
 
-        const backendURL = 'https://server-mail.vercel.app/send'
+        const backendURL = 'https://server-mail.vercel.app/'
           this.http.post(backendURL, data, { headers: headers }).subscribe(
           (response) => {
             console.log('Respuesta del servidor:', response);
