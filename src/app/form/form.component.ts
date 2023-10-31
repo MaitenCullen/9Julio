@@ -50,16 +50,18 @@ export class FormComponent {
           'Content-Type': 'application/json'
         });
 
-        const backendURL = 'https://server-mail.vercel.app/send'
+        const url = 'https://server-mail.vercel.app/send'
 
         const requestOptions = {
           headers: headers,
           method: 'POST', 
+          type: 'POST',
+          dataType: 'JSON',
           body: JSON.stringify(data) 
         };
 
 
-          this.http.post(backendURL, data, requestOptions).subscribe(
+          this.http.post(url, data, requestOptions).subscribe(
           (response) => {
             console.log('Respuesta del servidor:', response);
             setTimeout(() => {
