@@ -1,7 +1,8 @@
-
 import { Component } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {  Router } from '@angular/router';
+import { Loading } from 'notiflix';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 @Component({
@@ -10,21 +11,29 @@ import { Notify } from 'notiflix/build/notiflix-notify-aio';
   styleUrls: ['./contacto.component.scss']
 })
 export class ContactoComponent {
-  constructor(private router: Router ) { }
+  constructor(private http:HttpClient ) { }
 
   public nombre:string = ""
   public provincia:string = ""
   public email:string = ""
   public mensaje:string = ""
+  public telefono:string = ""
   public check:string|null = ""
   resultado: string = ""
+  public opcion:string = ""
+
 
   nombreControl= new FormControl(this.nombre,Validators.required);
   provinciaControl=new FormControl(this.provincia, Validators.required);
-  telefonoControl= new FormControl('');
+  telefonoControl= new FormControl(this.telefono);
   emailControl=new FormControl(this.email, [Validators.required, Validators.email]);
-  mensajeControl= new FormControl(this.mensaje, [Validators.required, Validators.maxLength(900)]);
+  mensajeControl= new FormControl(this.mensaje,[Validators.required, Validators.maxLength(900)]);
   checkControl= new FormControl(this.check, Validators.required);
+  opcionControl= new FormControl('');
+
+  onOptionSelect(event: any) {
+    this.opcionControl.setValue(event.target.value);
+  }
 
   public onchecked(event:any){
     if (event.target.checked){
@@ -34,13 +43,48 @@ export class ContactoComponent {
     }
   }
 
-  public location = window.location.href
+  public location = window.location.href;
 
+  public onSubmit(event:Event){
+    event.preventDefault()
+    Loading.pulse();
+    const data = {
+      nombre: this.nombre,
+      empresa: this.provincia,
+      email: this.email,
+      telefono:this.telefono,
+      mensaje: `${this.mensaje} \n Motivo de la consulta: ${this.opcionControl.value} `
+    };
+    console.log(data, this.telefono)
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json'
+    });
+    const url = 'https://server-mail.vercel.app/send'
 
-  public onSubmit(event:any){
-    setTimeout(() => {
-      Notify.success('Mensaje enviado');
-    }, 1000);
+    const requestOptions = {
+      headers: headers,
+      method: 'POST', 
+      type: 'POST',
+      dataType: 'JSON',
+      body: JSON.stringify(data) 
+    };
+
+     this.http.post(url, data, requestOptions).subscribe(
+          (response:any) => {
+            Loading.remove();
+            console.log('Respuesta del servidor:', response);
+            if (response.ok) {
+              Notify.success('Mensaje enviado');
+              setTimeout(()=>{
+                location.reload();
+              }, 1000);
+            
+            }
+          },
+          (error) => {
+            console.error('Error en la solicitud POST:', error);
+          }
+        );
    }
 
 }
