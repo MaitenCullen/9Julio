@@ -59,10 +59,11 @@ export class FormComponent {
           this.http.post(url, data, requestOptions).subscribe(
           (response:any) => {
             Loading.remove();
-            console.log('Respuesta del servidor:', response);
             if (response.ok) {
               Notify.success('Mensaje enviado');
-              location.reload();
+              setTimeout(()=>{
+                location.reload();
+              }, 1000);
             }
           },
           (error) => {

@@ -55,7 +55,7 @@ export class ContactoComponent {
       telefono:this.telefono,
       mensaje: `${this.mensaje} \n Motivo de la consulta: ${this.opcionControl.value} `
     };
-    console.log(data, this.telefono)
+   
     const headers = new HttpHeaders({
       'Content-Type': 'application/json'
     });
@@ -72,7 +72,6 @@ export class ContactoComponent {
      this.http.post(url, data, requestOptions).subscribe(
           (response:any) => {
             Loading.remove();
-            console.log('Respuesta del servidor:', response);
             if (response.ok) {
               Notify.success('Mensaje enviado');
               setTimeout(()=>{
