@@ -11,7 +11,11 @@ import { Notify } from 'notiflix/build/notiflix-notify-aio';
   styleUrls: ['./contacto.component.scss']
 })
 export class ContactoComponent {
-  constructor(private http:HttpClient ) { }
+  
+  public location: string;
+  constructor(private http: HttpClient, private router: Router) {
+    this.location = this.router.url;
+  }
 
   public nombre:string = ""
   public provincia:string = ""
@@ -43,7 +47,9 @@ export class ContactoComponent {
     }
   }
 
-  public location = window.location.href;
+
+
+
 
   public onSubmit(event:Event){
     event.preventDefault()

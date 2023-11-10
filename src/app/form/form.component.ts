@@ -5,6 +5,7 @@ import { FormControl, Validators} from '@angular/forms';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import { Loading } from 'notiflix/build/notiflix-loading-aio';
 import * as Notiflix from 'notiflix';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -16,8 +17,9 @@ import * as Notiflix from 'notiflix';
 
 export class FormComponent {
 
-  constructor(private http:HttpClient) {
-
+  public location: string;
+  constructor(private http: HttpClient, private router: Router) {
+    this.location = this.router.url;
   }
   
     public nombre:string = ""
@@ -32,7 +34,6 @@ export class FormComponent {
     mensajeControl= new FormControl(this.mensaje, [Validators.required, Validators.maxLength(900)]);
 
     
-     public location = window.location.href;  
 
      public onSubmit(event:Event){
       event.preventDefault()
