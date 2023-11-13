@@ -120,7 +120,7 @@
                 text-align: left;
             }
             img{
-                width: 80%;
+                width: 500px;
             }
         }
        
@@ -190,7 +190,7 @@
             justify-content: space-between;
             align-items: flex-start;
             div{
-                width: 35%;
+
                 h5{
                     @include text-img-home;
                     font-size: 1.6rem;
@@ -209,7 +209,7 @@
                     text-align: left;
                 }
                 img{
-                    width: 90%;
+                    width: 380px;
                 }
             }
            
@@ -220,6 +220,9 @@
 
 
 @media screen and (min-width: 650px) and (max-width: 1239px) {
+    .section-medicina-laboral{
+        margin-bottom: 20%;
+    }
     .container-medicina-laboral{
         background-image: url("../../assets/img/backgroundMedicinaLaboral.png");
         background-repeat: inherit;
@@ -273,6 +276,7 @@
         justify-content: center;      
         align-items: center;
         flex-direction: column;
+        margin-bottom: 20px;
         .container-beneficios{
             width: 90%;
             align-items: center;
@@ -289,7 +293,7 @@
                     text-align: justify;
                 }
                 img{
-                    width: 60%;
+                    width:400px;
                 }
             }
            
@@ -298,6 +302,9 @@
     }
 }
 @media screen and (min-width: 200px) and (max-width: 650px) {
+    .section-medicina-laboral{
+        margin-bottom: 10%;
+    }
     .container-medicina-laboral{
         display: flex;
         flex-direction: column;
@@ -371,7 +378,8 @@
         justify-content: center;      
         align-items: center;
         flex-direction: column;
-
+        padding:  20px 0;
+        margin-bottom: 60px;
         .container-beneficios{
             margin-bottom: 30px;
             width: 90%;
@@ -388,11 +396,11 @@
                     text-align: left;
                 }
                 img{
-                    width: 60%;
+                    width: 170px;
                 }
             }
             .div-colaboradores{
-                margin-bottom: 60%;
+                margin-bottom: 20%;
             }
            
         }

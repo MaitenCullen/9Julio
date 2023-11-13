@@ -29,6 +29,7 @@
     }
     p{
         font-size: 1.6rem;
+      
     }
 }
 .div-preguntas-00{
@@ -36,6 +37,7 @@
     flex-direction: column;
     p{
         margin-bottom: 0;
+    
     }
     div{
         width: 90%;
@@ -46,6 +48,7 @@
     .card-body{
         p{
             font-size: 1.3rem;
+            
         }
     }
 }
@@ -85,8 +88,12 @@
     &:hover{
         color:black
     }
+    a{
+        font-weight: bold;
+    }
     p{
         @include text-img-home;
+        
     }
 }
 @media screen and (min-width: 1240px) and (max-width: 1700px) {
@@ -126,6 +133,10 @@
 }
 
 @media screen and (min-width: 650px) and (max-width: 1239px) {
+    .section-preguntas{
+        
+    margin-bottom: 25%;
+    }
     .container-preguntas{
         align-items: center;
         .preguntas-frecuentes{

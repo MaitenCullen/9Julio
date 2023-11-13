@@ -6,7 +6,7 @@
      }
 }
 .container-coberturas{
-    height: 80vh;
+    height: 100%;
     background-image: url("../../assets/img/coberturasFondo.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -14,9 +14,12 @@
     flex-direction: column;
     align-items: center;
     padding-top: 10px;
+    padding-bottom: 10px;
     div{
+        padding:20px;
         height: 100%;
-        width: 50%;
+        margin: 80px 0 80px 0;
+        width: 70%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -25,6 +28,7 @@
             @include navbar;
             text-align: center;
             font-size: 1.5rem;
+            font-weight: 500;
         }
         a{
             font-size: 2rem;
@@ -37,7 +41,7 @@
 
 @media screen and (min-width: 650px) and (max-width: 1239px) {
     .container-coberturas{
-        height: 90vh;
+        height: 100%;
         background-image: url("../../assets/img/coberturasFondo.png");
         background-size: contain;
         background-repeat: no-repeat;
@@ -45,39 +49,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 20px;
         div{
             height: 100%;
-            width: 70%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-            p,h5{
-                @include navbar;
-                text-align: center;
-                font-size: 1.2rem;
-            }
-            h5{
-                font-size: 1.6rem;
-            }
-        }
-       
-    }
-
-}
-
-@media screen and (min-width: 200px) and (max-width: 649px) {
-    .container-coberturas{
-        height: 90vh;
-        background-image: url("../../assets/img/coberturasFondo.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        div{
-            height: 100%;
+            margin-bottom: 50px;
             width: 90%;
             display: flex;
             flex-direction: column;
@@ -86,10 +61,58 @@
             p,h5{
                 @include navbar;
                 text-align: center;
-                font-size: 1rem;
+                font-size: 1.1rem;
             }
             h5{
-                font-size: 0.9rem;
+                font-size: 1.4rem;
+            }
+            a{
+                font-size: 1.5rem;
+                text-decoration: none;
+            }
+        }
+       
+    }
+
+}
+
+@media screen and (min-width: 200px) and (max-width: 649px) {
+    .section-coberturas{
+       height: 700px;
+    }
+    .container-coberturas{
+        background-image: url("../../assets/img/coberturasFondo.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0 20px 0;
+        height: 100%;
+        div{
+            margin: 30px 0 30px 0;
+            padding: 20px;
+            height: 50%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            p,h5{
+                @include navbar;
+                text-align: center;
+                font-size: 12px;
+                font-weight: 600;
+            }
+           
+            h5{
+                font-size: 12px;
+            }
+            a{
+                font-size: 12px;
+                text-decoration: none;
+                font-weight: bold;
             }
         }
        

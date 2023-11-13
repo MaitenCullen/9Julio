@@ -1,5 +1,9 @@
 @import "../../styles/variables";
-
+.container-servicios{
+    .div-descripcion{
+        width: 95%;
+    }
+}
 
 .container-ul-cardiologia{
    width: 100%;
@@ -12,7 +16,8 @@
     }
     li{
         @include text-img-home;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+        font-weight: 600;
         line-height: 30px;
         padding: 1%;
         text-align: start;
@@ -33,7 +38,12 @@
 
     .container-ul-cardiologia{
         padding: 1%;
-    
+        li{
+            font-size: 1.1rem;
+        }
+        h4{
+            font-size: 1.3rem;
+        }
     }
 
 }
@@ -63,8 +73,10 @@
         }
         li{
             font-size: 1rem;
+            font-weight: 600;
             h4{
                 font-size: 1.2rem;
+                font-weight: 600;
             }
         }
     }
