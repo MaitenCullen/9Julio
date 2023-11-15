@@ -82,7 +82,7 @@
         p{
             @include white-header;
             font-size: 1.2rem;
-            text-align: justify;
+            text-align: left;
             padding: 0;
             margin: 0;
             font-weight: 600;
@@ -362,7 +362,7 @@
                 padding: 2px;
                 p{
                     font-size: 0.8rem;
-                    text-align: justify;
+                    text-align: left;
                 }
             }
 

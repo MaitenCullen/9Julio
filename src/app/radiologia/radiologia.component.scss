@@ -17,7 +17,7 @@
     p{
         @include white-header;
         font-size: 1.2rem;
-        text-align: justify;
+        text-align: left;
         padding: 0;
         margin: 0;
         font-weight: 600;
@@ -41,7 +41,7 @@
         p{
             @include white-header;
             font-size: 1rem;
-            text-align: justify;
+            text-align: left;
             padding: 0;
             margin: 0;
             font-weight: 600;
@@ -64,7 +64,7 @@
             p{
                 @include white-header;
                 font-size: 1rem;
-                text-align: justify;
+                text-align: left;
                 padding: 0;
                 margin: 0;
                 font-weight: 600;

@@ -30,12 +30,18 @@
         </span>
     </fieldset> 
     <div class="container-buttons">
+      <div class="checkbox-wrapper-40">
+        <label>
+          <input type="checkbox" [formControl]="checkControl" (change)="onchecked($event)" />
+          <span class="checkbox">No soy robot</span>
+        </label>
+      </div>
       <div class="forms-buttons">
           <label>
-            <button name="submit" type="submit"  data-submit="...Sending" [disabled]="!nombreControl.valid || !empresaControl.valid || !emailControl.valid || !mensajeControl.valid"  (click)="onSubmit($event)" >Enviar</button>
+            <button name="submit" type="submit"  data-submit="...Sending" [disabled]="!nombreControl.valid || !empresaControl.valid || !emailControl.valid || !mensajeControl.valid || !checkControl.valid"  (click)="onSubmit($event)" class="blue-button" >Enviar</button>
           </label>
           <label for="">
-              <button name="delete" type="reset" >Borrar todo</button>
+              <button name="delete" type="reset" class="blue-button">Borrar todo</button>
           </label>
         </div>
     </div>

@@ -26,14 +26,24 @@ export class FormComponent {
     public empresa:string = ""
     public email:string = ""
     public mensaje:string = ""
+    public check:string|null = ""
+    resultado: string = ""
+  
 
     nombreControl= new FormControl(this.nombre,Validators.required);
     empresaControl=new FormControl(this.empresa, Validators.required);
     telefonoControl= new FormControl('');
     emailControl=new FormControl(this.email, [Validators.required, Validators.email]);
     mensajeControl= new FormControl(this.mensaje, [Validators.required, Validators.maxLength(900)]);
+    checkControl= new FormControl(this.check, Validators.required);
 
-    
+    public onchecked(event:any){
+      if (event.target.checked){
+        this.check="checked"
+      } else {
+        this.check = null
+      }
+    }
 
      public onSubmit(event:Event){
       event.preventDefault()
@@ -61,10 +71,14 @@ export class FormComponent {
           (response:any) => {
             Loading.remove();
             if (response.ok) {
-              Notify.success('Mensaje enviado');
+              Notiflix.Report.success(
+                'Mensaje enviado',
+                'Gracias por el mensaje, nos comunicaremos a la brevedad',
+                'Ok',
+                );
               setTimeout(()=>{
                 location.reload();
-              }, 1000);
+              }, 3000);
             }
           },
           (error) => {

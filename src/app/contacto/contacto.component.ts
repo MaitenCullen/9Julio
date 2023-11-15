@@ -4,6 +4,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {  Router } from '@angular/router';
 import { Loading } from 'notiflix';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
+import * as Notiflix from 'notiflix';
 
 @Component({
   selector: 'app-contacto',
@@ -47,10 +48,6 @@ export class ContactoComponent {
     }
   }
 
-
-
-
-
   public onSubmit(event:Event){
     event.preventDefault()
     Loading.pulse();
@@ -79,11 +76,14 @@ export class ContactoComponent {
           (response:any) => {
             Loading.remove();
             if (response.ok) {
-              Notify.success('Mensaje enviado');
+              Notiflix.Report.success(
+                'Mensaje enviado',
+                'Gracias por el mensaje, nos comunicaremos a la brevedad',
+                'Ok',
+                );
               setTimeout(()=>{
                 location.reload();
-              }, 1000);
-            
+              }, 3000);
             }
           },
           (error) => {
