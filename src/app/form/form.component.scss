@@ -112,6 +112,7 @@ fieldset {
   --borderColor: #48c;
   --borderWidth: .125em;
   padding-left: 10px;
+  width: 50%;
   label {
     display: flex;
     align-items: center;
@@ -170,8 +171,9 @@ fieldset {
 }
 
 .checkbox {
-  font-size: 1rem;
+  font-size: 0.8rem;
   @include white-header;
+  display: flex;
 }
 .form-control.ng-invalid.ng-touched{
   border: solid 2px rgba(255, 0, 0, 0.432);

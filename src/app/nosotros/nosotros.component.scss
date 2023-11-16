@@ -22,9 +22,9 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    img{
-        width: 30%;
-    }
+    // img{
+    //     width: 30%;
+    // }
     p{
         @include text-img-home;
         font-size: 2rem;
@@ -43,12 +43,12 @@
     h4{
         @include title-nosotros;
     }
-    .img-nosotros01a{
-        width: 10%;
-    }
-    .img-nosotros01{
-        width: 35%;
-    }
+    // .img-nosotros01a{
+    //     width: 10%;
+    // }
+    // .img-nosotros01{
+    //     width: 35%;
+    // }
 }
 .background-nosotros02{
     display: flex;
@@ -63,9 +63,9 @@
     h4{
         @include title-nosotros;
     }
-    .img-nosotros02{
-        width: 35%;
-    }
+    // .img-nosotros02{
+    //     width: 35%;
+    // }
 }
 .background-nosotros03{
     display: flex;
@@ -91,12 +91,12 @@
         }
     }
    
-    .img-nosotros03a{
-        width: 35%;
-    }
-    .img-nosotros03{
-        width: 7%;
-    }
+    // .img-nosotros03a{
+    //     width: 35%;
+    // }
+    // .img-nosotros03{
+    //     width: 7%;
+    // }
 }
 @media screen and (min-width: 1240px) and (max-width: 1700px) {
     .background-nosotros0{
@@ -107,8 +107,8 @@
         }
     }
     .background-nosotros01{
-        .img-nosotros01{
-            width: 35%;
+         .img-nosotros01{
+            width: 500px;
         }
         p{
             font-size:1.3rem;
@@ -127,9 +127,9 @@
                 display: none;
             }
         }
-        .img-nosotros02{
-            width: 35%;
-        }
+         .img-nosotros02{
+            width: 500px;
+         }
         h4{
            font-size: 1.7rem;
         }
@@ -145,22 +145,22 @@
         h4{
             font-size: 1.7rem;
          }
-        .img-nosotros03a{
-            width: 35%;
-        }
-        .img-nosotros03{
-            width: 5%;
-        }
+         .img-nosotros03a{
+            width: 500px;
+         }
+         .img-nosotros03{
+            width: 150px;
+         }
     }
 }
-@media screen and (min-width: 850px) and (max-width: 1240px) {
-    .container-nosotros{
-        margin-bottom: 5%;
-    }
+@media screen and (min-width: 890px) and (max-width: 1240px) {
+    // .container-nosotros{
+    //     margin-bottom: 5%;
+    // }
     .background-nosotros0{
-        img{
-            width: 42%;
-        }
+         img{
+            width: 300px;
+         }
         p{
             font-size: 1rem;
             font-weight: bold;
@@ -169,10 +169,13 @@
     
     .background-nosotros01{
         .img-nosotros01{
-            width: 35%;
+            width: 400px;
+        }
+        .img-nosotros01a{
+            width: 70px;
         }
         p{
-            font-size:0.8rem;
+            font-size:0.9rem;
             br{
                 display: none;
             }
@@ -188,13 +191,13 @@
     }
     .background-nosotros02{
         p{
-            font-size:0.8rem;
+            font-size:0.9rem;
             br{
                 display: none;
             }
         }
         .img-nosotros02{
-            width: 35%;
+            width: 400px
         }
         h4{
             font-size: 1.4rem;
@@ -206,21 +209,21 @@
          }
     }
     .background-nosotros03{
-        align-items: flex-end;
+        align-items: center;
 
         .img-nosotros03a{
-            width: 35%;
+            width: 400px
         }
         .img-nosotros03{
-            width: 5%;
+            width:70px;
         }
-       
+        .rombo-gris{
+            width: 5%;
+            margin-top: 3px;
+        }
          .div-text-nosotros-final{
-            margin-bottom: 10px;
-            .rombo-gris{
-                width: 5%;
-                margin-top: 3px;
-             }
+            margin-bottom: 40px;
+            
              p{
                 font-size:0.8rem;
                 br{
@@ -238,12 +241,12 @@
         
     }
 }
-@media screen and (min-width: 560px) and (max-width: 849px) {
+@media screen and (min-width: 570px) and (max-width: 889px) {
     .background-nosotros0{
         position: relative;
         justify-content: space-between;
         img{
-            width: 40%;
+            width: 20px;
             top: 0;
             position: absolute;
             right: 0;
@@ -253,7 +256,7 @@
             font-size: 0.9rem;
             width: 60%;
             font-weight: bolder;
-            padding: 10px;
+            padding: 20px;
             text-align: left;
             z-index: 1;
             br{
@@ -265,7 +268,10 @@
     
     .background-nosotros01{
         .img-nosotros01{
-            width: 35%;
+            width: 300px;
+        }
+        .img-nosotros01a{
+            width: 60px;
         }
         p{
             font-size:0.8rem;
@@ -290,7 +296,7 @@
             }
         }
         .img-nosotros02{
-            width: 35%;
+            width:300px
         }
         h4{
             font-size: 1rem;
@@ -303,10 +309,10 @@
     }
     .background-nosotros03{
         display: flex;
-        flex-direction: column;
         align-items: flex-end;
+        margin-bottom: 35%;
         .div-text-final{
-            justify-content: center;
+            justify-content: flex-end;
             .rombo-gris{
                 width: 20px;
                 margin-top: 3px;
@@ -316,8 +322,7 @@
              }
         }
         .div-text-nosotros-final{
-            margin-bottom: 0;
-            width: 70%;
+        
              p{
                 font-size:0.8rem;
                 br{
@@ -337,7 +342,7 @@
     
       
         .img-nosotros03a{
-          width: 40%;
+          width: 300px;
 
         }
         .img-nosotros03{
@@ -345,7 +350,7 @@
         }
     }
 }
-@media screen and (min-width: 200px) and (max-width: 559px) {
+@media screen and (min-width: 200px) and (max-width: 569px) {
     .container-nosotros{
         margin-bottom: 40%;
     }
@@ -353,7 +358,7 @@
         position: relative;
         justify-content: space-between;
         img{
-            width: 40%;
+            width: 120px;
             top: 0;
             position: absolute;
             right: 0;
@@ -362,7 +367,7 @@
         p{
             font-size: 0.9rem;
             width: 70%;
-            padding: 10px;
+            padding: 20px;
             font-weight: bolder;
             text-align: left;
             z-index: 1;
@@ -375,16 +380,19 @@
     
     .background-nosotros01{
         .img-nosotros01{
-            width: 35%;
+            width:120px;
+        }
+        .img-nosotros01a{
+            width:30px;
         }
         p{
-            font-size:0.8rem;
+            font-size:0.7rem;
             br{
                 display: none;
             }
         }
         h4{
-            font-size: 1rem;
+            font-size: 0.9rem;
             margin-top: 3px;
          }
          .rombo-gris{
@@ -394,16 +402,16 @@
     }
     .background-nosotros02{
         p{
-            font-size:0.8rem;
+            font-size:0.7rem;
             br{
                 display: none;
             }
         }
         .img-nosotros02{
-            width: 35%;
+            width: 100px;
         }
         h4{
-            font-size: 1rem;
+            font-size: 0.9rem;
             margin-top: 3px;
          }
          .rombo-gris{
@@ -426,15 +434,15 @@
              }
         }
         .div-text-nosotros-final{
-            width: 70%;
+                padding: 0 5px;
              p{
-                font-size:0.8rem;
+                font-size:0.7rem;
                 br{
                     display: none;
                  }
             }
             h4{
-                font-size: 1em;
+                font-size: 0.9em;
                 margin-top: 3px;
                 br{
                     display: none;
@@ -446,7 +454,7 @@
     
       
         .img-nosotros03a{
-          width: 40%;
+          width: 200px
 
         }
         .img-nosotros03{

@@ -33,7 +33,7 @@
     ul{
         margin: 0;
         padding: 0;
-        text-align: justify;
+        text-align: left;
     }
     li{
         @include text-img-home;
@@ -112,7 +112,7 @@
                 padding: 0;
             }
             li{
-                list-style-type: none;
+                list-style-type: "-";
                 @include text-img-home;
                 font-size: 1.3rem;
                 line-height: 30px;

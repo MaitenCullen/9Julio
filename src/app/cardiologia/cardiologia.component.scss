@@ -13,6 +13,9 @@
     margin:3% 0 3% 0;
     ul{
         width: 30%;
+        h4{
+            padding-left: 2rem
+        }
     }
     li{
         @include text-img-home;
@@ -42,7 +45,7 @@
             font-size: 1.1rem;
         }
         h4{
-            font-size: 1.3rem;
+            font-size: 1.2rem;
         }
     }
 
