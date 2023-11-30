@@ -12,7 +12,7 @@ import * as Notiflix from 'notiflix';
   styleUrls: ['./contacto.component.scss']
 })
 export class ContactoComponent {
-  
+   
   public location: string;
   constructor(private http: HttpClient, private router: Router) {
     this.location = this.router.url;

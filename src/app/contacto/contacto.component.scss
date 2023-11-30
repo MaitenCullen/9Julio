@@ -37,6 +37,7 @@
 
 #contact {
   max-width: 600px;
+  min-width: 500px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -152,7 +153,7 @@ fieldset {
   border-radius: 0.125em;
   display: inline-block;
   border: 3px solid $blue-light;
-  width: 1.2em;
+  width: 1.1em;
   height: 1em;
   margin-right: 5px;
   position: relative;
@@ -193,7 +194,7 @@ fieldset {
 }
 
 .checkbox {
-  font-size: 1rem;
+  font-size: 0.8rem;
   @include white-header;
 }
 .form-control.ng-invalid.ng-touched{
@@ -261,6 +262,8 @@ fieldset {
       margin: 0 30%;
     }
     #contact {
+      max-width: 450px;
+      min-width: 180px;
       padding: 8px;
         h3 {
           font-size: 1rem;
