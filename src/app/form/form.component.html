@@ -1,7 +1,6 @@
 <div class="container" >  
   <form id="contact"  method="POST"  action="/send" >
-    <h3>Para mas información, le pedimos 
-      que por favor complete el formulario.</h3>
+    <h3>Para más información, por favor complete el siguiente formulario</h3>
     <fieldset>
       <input placeholder="Nombre y apellido" type="text" tabindex="1" [formControl]="nombreControl" class="form-control nombre" name="nombre" required [(ngModel)]="nombre">
       <span *ngIf="nombreControl?.touched && !nombreControl.valid" class="error">

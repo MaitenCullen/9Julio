@@ -393,17 +393,17 @@
         .div-servicios{
             flex-wrap: wrap;
             flex-direction: row;
-            justify-content: space-between;
-            padding: 10px 20px;
+            justify-content: space-evenly;
+            padding: 10px 40px;
             img{
-             width: 160px;
+             width: 180px;
             }
             div{
                 h5{
                     font-size: 1.2;                
                 }
-                width: 160px;
-                height: 180px;
+                width: 250px;
+                height: 250px;
             }
         }
     }
@@ -423,6 +423,9 @@
         }
 }
 @media screen and (min-width: 600px) and (max-width: 912px) {
+    .container-home{
+        margin-bottom: 230px;
+    }
     .section-home{
         margin-bottom: 50px;
         .div-img-home-services{
@@ -574,7 +577,9 @@
         }
 }
 @media screen and (min-width: 340px) and (max-width: 599px) {
-
+ .container-home{
+    margin-bottom: 100px;
+ }
     .section-home{
         .div-img-home-services{
                 justify-content: center;

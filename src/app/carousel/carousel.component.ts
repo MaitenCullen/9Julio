@@ -12,11 +12,11 @@ import { FormsModule } from '@angular/forms';
 })
 export class NgbdCarouselPause {
 	images = [
-    {
-      id:0,
-      img:'./assets/img/banner0.png',
-	  link: 'nosotros'
-    },
+	{
+		id:0,
+		img:"assets/img/banner03.png",
+		link: 'serviciosMedicos'
+	},
     {
       id:1,
       img:"./assets/img/banner01.png",
@@ -27,11 +27,11 @@ export class NgbdCarouselPause {
       img:"./assets/img/banner02.png",
 	  link: 'serviciosMedicos'
     },
-    {
-      id:3,
-      img:"assets/img/banner03.png",
-	  link: 'serviciosMedicos'
-    }
+	{
+		id:3,
+		img:'./assets/img/banner0.png',
+		link: 'nosotros'
+	  }
   ]
 	paused = false;
 	unpauseOnArrow = false;
@@ -50,10 +50,10 @@ export class NgbdCarouselPause {
 		if (screenWidth < 850) {
 		  updatedImages = [
 			{
-			  id: 0,
-			  img: './assets/img/banner0M.png',
-			  link: 'nosotros'
-			},
+				id:0,
+				img:"assets/img/banner03M.png",
+				link: 'serviciosMedicos'
+			  },
 			{
 				id:1,
 				img:"./assets/img/banner01M.png",
@@ -65,9 +65,9 @@ export class NgbdCarouselPause {
 				link: 'serviciosMedicos'
 			  },
 			  {
-				id:3,
-				img:"assets/img/banner03M.png",
-				link: 'serviciosMedicos'
+				id: 3,
+				img: './assets/img/banner0M.png',
+				link: 'nosotros'
 			  }
 		  ];
 		}
