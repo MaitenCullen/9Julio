@@ -78,7 +78,7 @@ export class FormComponent {
                 );
               setTimeout(()=>{
                 location.reload();
-              }, 3000);
+              }, 5000);
             }
           },
           (error) => {

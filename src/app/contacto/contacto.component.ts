@@ -83,7 +83,7 @@ export class ContactoComponent {
                 );
               setTimeout(()=>{
                 location.reload();
-              }, 3000);
+              }, 5000);
             }
           },
           (error) => {
