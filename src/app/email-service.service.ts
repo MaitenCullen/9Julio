@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class EmailServiceService {
-  private url = 'http://localhost/index.php';
+  private url = 'https://server-mail.vercel.app/send';
   constructor(private http:HttpClient) {
   }
 
