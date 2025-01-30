@@ -28,11 +28,12 @@
     h5{
         @include text-img-home;
         font-size: 2rem;
+        font-weight: 600;
     }
     ul{
         margin: 0;
         padding: 0;
-        text-align: justify;
+        text-align: left;
     }
     li{
         @include text-img-home;
@@ -64,6 +65,7 @@
         h5{
             @include white-header;
             font-size: 2rem;
+            font-weight: 600;
         }
     }
   
@@ -80,9 +82,10 @@
         p{
             @include white-header;
             font-size: 1.2rem;
-            text-align: justify;
+            text-align: left;
             padding: 0;
             margin: 0;
+            font-weight: 600;
         }
     }
 }
@@ -109,7 +112,7 @@
                 padding: 0;
             }
             li{
-                list-style-type: none;
+                list-style-type: "-";
                 @include text-img-home;
                 font-size: 1.3rem;
                 line-height: 30px;
@@ -117,7 +120,7 @@
                 text-align: left;
             }
             img{
-                width: 80%;
+                width: 500px;
             }
         }
        
@@ -156,6 +159,7 @@
             h5{
                 @include white-header;
                 font-size: 1.6rem;
+                font-weight: 600;
                 br{
                     display: none;
                 }
@@ -164,13 +168,16 @@
         .container-text-laboral{
             width: 100%;
             padding: 10px;
+            
             div{
                 width: 60%;
                 padding: 10px 20px 10px 20px;
+      
             }
             p{
                 @include white-header;
                 font-size: 1rem;
+                font-weight: 600;
             }
         }
     }
@@ -183,10 +190,11 @@
             justify-content: space-between;
             align-items: flex-start;
             div{
-                width: 35%;
+
                 h5{
                     @include text-img-home;
                     font-size: 1.6rem;
+                    font-size: 600;
                 }
                 ul{
                     margin-bottom: 10%;
@@ -201,7 +209,7 @@
                     text-align: left;
                 }
                 img{
-                    width: 90%;
+                    width: 380px;
                 }
             }
            
@@ -212,6 +220,9 @@
 
 
 @media screen and (min-width: 650px) and (max-width: 1239px) {
+    .section-medicina-laboral{
+        margin-bottom: 20%;
+    }
     .container-medicina-laboral{
         background-image: url("../../assets/img/backgroundMedicinaLaboral.png");
         background-repeat: inherit;
@@ -222,7 +233,7 @@
         align-items: center;
         .div-contenido-medicina{
             flex-direction: column;
-            width: 60%;
+            width: 80%;
             div{
                 width: 100%;
             }
@@ -234,6 +245,7 @@
         width: 60%;
         flex-direction: column;
         align-items: center;
+        max-width: 500px;
         .div-subtitulo-laboral{
             width: 100%;
             h5{
@@ -264,6 +276,7 @@
         justify-content: center;      
         align-items: center;
         flex-direction: column;
+        margin-bottom: 20px;
         .container-beneficios{
             width: 90%;
             align-items: center;
@@ -280,7 +293,7 @@
                     text-align: justify;
                 }
                 img{
-                    width: 60%;
+                    width:400px;
                 }
             }
            
@@ -289,6 +302,9 @@
     }
 }
 @media screen and (min-width: 200px) and (max-width: 650px) {
+    .section-medicina-laboral{
+        margin-bottom: 10%;
+    }
     .container-medicina-laboral{
         display: flex;
         flex-direction: column;
@@ -299,7 +315,7 @@
         background-position: bottom;
         .div-contenido-medicina{
             flex-direction: column;
-            width: 70%;
+            width: 80%;
             .div-form{
                 width: 100%;
                 display: flex;
@@ -308,6 +324,7 @@
             }
             h5{
                 font-size: 1.2rem;
+  
             }
             li{
                 font-size: 1rem;
@@ -324,8 +341,8 @@
     }
     .div-texts-laboral{
         margin-top: 5%;
-        width: 80%;
-        max-width: 270px;
+        width: 90%;
+        max-width: 300px;
         flex-direction: column;
         align-items: center;
         .div-subtitulo-laboral{
@@ -345,7 +362,7 @@
                 padding: 2px;
                 p{
                     font-size: 0.8rem;
-                    text-align: justify;
+                    text-align: left;
                 }
             }
 
@@ -361,14 +378,15 @@
         justify-content: center;      
         align-items: center;
         flex-direction: column;
-        margin-bottom: 40%;
+        padding:  20px 0;
+        margin-bottom: 60px;
         .container-beneficios{
             margin-bottom: 30px;
             width: 90%;
             align-items: center;
             flex-direction: column;
             div{
-                width: 80%;
+                width: 90%;
                 h5{
                     @include text-img-home;
                     font-size: 1.5rem;
@@ -378,8 +396,11 @@
                     text-align: left;
                 }
                 img{
-                    width: 60%;
+                    width: 170px;
                 }
+            }
+            .div-colaboradores{
+                margin-bottom: 20%;
             }
            
         }

@@ -10,10 +10,12 @@
     padding: 20px;
     .title-sabermas{
         width: 40%;
+        
     }
     h5{
         @include white-header;
         font-size: 1.8rem;
+        font-weight: bold;
     }
     
 }
@@ -25,18 +27,21 @@
     align-items: flex-start;
     div{
         width: 60%;
-        padding: 0 10px 0 10px;
+        padding: 0 15px 0 15px;
     }
       h5{
-                margin: 3% 0 2% 0;
-                padding: 2% 0 2% 0;
-            }
+        margin: 15px 0 15px 0;
+        padding: 10px 0 10px 0;
+        font-weight: bold;
+        font-size: 1.3rem;
+        }
     p{
         @include white-header;
         font-size: 1.2rem;
-        text-align: justify;
+        text-align: left;
         padding: 0;
         margin: 0;
+        font-weight: 600;
     }
 }
 
@@ -46,6 +51,7 @@
 
 
 .container-sabermas-oftalmologia{
+    margin-bottom: 50px;
     width: 70%;
     display: flex;
     justify-content: space-around;
@@ -59,6 +65,7 @@
         @include white-header;
         font-size: 1.6rem;
         text-align: center;
+        font-weight: 600;
     }
     }
 
@@ -74,10 +81,11 @@
         }
         p{
             @include white-header;
-            font-size: 1rem;
-            text-align: justify;
+            font-size: 14px;
+            text-align: left;
             padding: 0;
             margin: 0;
+            font-weight: 600;
         }
     }
 
@@ -86,6 +94,7 @@
 @media screen and (min-width: 200px) and (max-width: 649px) {
 
     .container-sabermas-oftalmologia{
+     
         width: 100%;
         display: flex;
         justify-content: space-around;
@@ -96,8 +105,9 @@
         }
         h5{
             @include white-header;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             text-align: center;
+            font-weight: bold;
         }
         }
         
@@ -114,9 +124,10 @@
             p{
                 @include white-header;
                 font-size: 1rem;
-                text-align: justify;
+                text-align: left;
                 padding: 0;
                 margin: 0;
+                font-weight: 600;
             }
         }
     }

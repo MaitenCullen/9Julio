@@ -8,23 +8,21 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
+    padding: 0 70px;
     a{
         text-decoration: none;
         @include blue-header;
     }
     .div-rrss{
-        width: 15%;
         display: flex;
         justify-content: center;
         .icon-rrss{
             font-size: 1.5rem;
-            margin-right: 5%;
+            margin:0 15px;
         }
 
     }
     .div-paciente{
-        width: 40%;
         display: flex;
         justify-content: space-evenly;
         div {
@@ -33,6 +31,7 @@
                margin:6px
             }
             padding: 10px;
+            margin: 0 10px;
             background-color: $grey-base;
             height: 66px;
             text-align: center;
@@ -46,17 +45,41 @@
     display: flex;
     width: 100%;
     height: 163px;
-    padding: 10px;
     @include white-header;
     .container-header{
         display: flex;
         justify-content: space-between;
         width: 100%;
+        padding: 20px 80px;
         .div-header-text{
             display: flex;
             align-items: center;
-            width: 60%;
-            justify-content: space-evenly;
+            justify-content: space-between;
+            a{
+                @include white-header;
+                text-decoration: none;
+                h3,h4{
+                    letter-spacing: 0;
+                    margin-bottom: 0;
+                    line-height: 40px;
+                    }
+                    h4{
+                        font-size: 1.8rem;
+                        font-weight: 600; 
+                    }
+                    h3{
+                        font-size: 3.7rem;
+                        font-weight: bold;
+                    }
+            }
+            p{
+                font-size: 6rem;
+                margin-bottom: 0;
+                margin:0 20px;
+            }
+            hr{
+                display: none;
+            }
             div{
                 display: flex;
                 align-items: flex-start;
@@ -64,20 +87,11 @@
                 flex-wrap: wrap;
             }
             img{
-                width: 5%;
+                width: 6%;
             }
+           
         }
-       h3,h4{
-        font-size: 2.2rem;
-        font-weight: bold;
-        margin-bottom: 0;
-        line-height: 40px;
-       
-        }
-        h5{
-            font-size: 3rem;
-            margin-bottom: 0;
-        }
+     
         .div-header-text-mobile{
             display: none;
         }
@@ -86,100 +100,104 @@
         display: flex;
         align-items: flex-start;
         flex-direction: column;
-        width: 20%;
         flex-wrap: wrap;
         justify-content: center;
             h4{
-            font-size: 1.2rem;
+            font-size: 1.8rem;
             margin-bottom: 0;
-            font-weight: 400;
+            font-weight: 600;
             }
             h6{
-                font-size: 3rem;
+                font-size: 3.5rem;
+                font-weight: bold;
                 margin-bottom: 0;
-                letter-spacing: -3px;
+                letter-spacing: 0px;
                 line-height: 40px;
             }
         }
    
 }
 
-@media screen and (min-width: 1230px) and (max-width: 1700px) {
+@media screen and (min-width: 1231px) and (max-width: 1700px) {
     .section-header{
         .container-header{
             .div-header-text{
-                width: 70%;
-            
+                a{
+                    h4{
+                        font-size: 1.6rem;
+                    }
+                    h3{
+                        font-size: 2.5rem;
+                    }
+                }
+               
+                p{
+                    font-size: 5rem;
+                }
             }
             .div-header-text-mobile{
                 display: none;
             }
 
-            h3,h4{
-                font-size: 2rem;
-                }
-                h5{
-                    font-size: 2.5rem;
-            }
+           
         }
         .div-header-num{
-            width: 20%;
+          
                 h4{
-                font-size: 1.3rem;
+                font-size: 1.4rem;
                 }
                 h6{
-                    font-size: 2rem;
+                    font-size: 2.5rem;
                 }
             }
 
     }
 }
-@media screen and (min-width: 800px) and (max-width: 1230px) {
-    .blue-header{
-        .div-paciente{
-            width: 60%;
-        }
-    }
+@media screen and (min-width: 1000px) and (max-width: 1230px) {
+   
     .section-header{
- 
+       
         .container-header{
+     
             hr{
                 display: none;
             }
             .div-header-text{
-                width: 75%;
+              a{
+                h4{
+                    font-size: 1.3rem;
+                    line-height: 30px;
+                }
+                h3{
+                    font-size: 1.8rem;
+                }
                 
+              }
+              p{
+                font-size: 4rem;
             }
-            h3,h4{
-                font-size: 1.5rem;
-                line-height: 30px;
             }
-            h5{
-                font-size: 1.3rem;
-            }
+          
             .div-header-text-mobile{
                 display: none;
             }
         }
         .div-header-num{
-            width: 25%;
+           
                 h4{
-                font-size: 1rem;
+                font-size: 1.3rem;
+                line-height: 30px;
                 }
                 h6{
-                    font-size: 1.5rem;
+                    font-size: 1.8rem;
                     letter-spacing: 1px;
                 }
             }
 
     }
 }
-@media screen and (min-width: 650px) and (max-width: 800px) {
-    .blue-header{
-        .div-paciente{
-            width: 60%;
-        }
-    }
+@media screen and (min-width: 800px) and (max-width: 999px) {
+
     .section-header{
 
         .container-header{
@@ -187,140 +205,130 @@
                 display: none;
             }
             .div-header-text{
-                width: 60%;
-                div{
-                    width: 40%;
-                 }
                  img{
                     width: 7%;
+                }
+                a{
+                    h4{
+                        font-size: 1.1rem;
+                        line-height: 15px;
+                        }
+                    h3{
+                        font-size: 1.7rem;
+                        letter-spacing: 0px;
+                    }
+                }
+               
+                p{
+                        font-size: 3.4rem;
                 }
             }
             .div-header-text-mobile{
                 display: none;
             }
-            h3,h4{
-                font-size: 1.2rem;
-                line-height: 20px;
-                }
-                h5{
-                    font-size: 1.5rem;
-            }
+          
         }
         .div-header-num{
-            width: 25%;
+        
                 h4{
-                font-size: 1.2rem;
+                font-size: 1.1rem;
+                line-height: 15px;
                 }
                 h6{
+                    font-size: 1.7rem;
+                    letter-spacing: 0px;
+                
+                }
+            }
+
+    }
+}
+@media screen and (min-width: 675px) and (max-width: 799px) {
+    .blue-header{
+        background-color: $blue-base;
+        height: 80px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    
+        a{
+            text-decoration: none;
+            @include blue-header;
+            font-size: 0.8rem;
+        }
+        .div-rrss{
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            .icon-rrss{
+                font-size: 1rem;
+                margin-right: 10px
+            }
+    
+        }
+        .div-paciente{
+           
+            display: flex;
+            justify-content: space-evenly;
+            div {
+                margin: 5px;
+                img{
+              
+                   margin:4px
+                }
+                padding: 5px;
+                background-color: $grey-base;
+                height: 35px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .section-header{
+        height: 170px;
+        .container-header{
+            padding: 10px 10px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly; 
+            .div-header-text{
+                display: none;
+        }
+        .div-header-text-mobile{
+            display: block;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            div{
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                align-items: center;
+                width: 250px;
+            }
+             a{
+                @include white-header;
+                text-decoration: none;
+                h4{
                     font-size: 1.2rem;
-                    letter-spacing: 0px;
-                    line-height: 25px;
+                    font-weight:600;
+                    margin: 0;
+                    }
+                h3{
+                    font-weight: bold;
+                    font-size: 1.8rem;
+                    margin: 0;
                 }
-            }
-
-    }
-}
-@media screen and (min-width: 370px) and (max-width: 650px) {
-    .blue-header{
-        background-color: $blue-base;
-        height: 80px;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    
-        a{
-            text-decoration: none;
-            @include blue-header;
-            font-size: 0.5rem;
-        }
-        .div-rrss{
-            width: 40%;
-            display: flex;
-            justify-content: center;
-            .icon-rrss{
-                font-size: 1rem;
-                margin-right: 5%;
-            }
-    
-        }
-        .div-paciente{
-            width: 60%;
-            display: flex;
-            justify-content: space-evenly;
-            div {
-                img{
-              
-                   margin:4px
-                }
-                padding: 5px;
-                background-color: $grey-base;
-                height: 30px;
-                text-align: center;
-                display: flex;
-                align-items: center;
-            }
-        }
-    }
-    .section-header{
-        height: 170px;
-        .container-header{
-            flex-direction: column;
-            align-items: center;
-            justify-content: center; 
-            .div-header-text{
-                display: none;
-            //     width: 100%;
-            //     flex-direction: column;
-            //     hr{
-            //         margin: 0.5rem;
-            //         width: 50%;
-            //         background-color: $blue-base;
-            //         color: $blue-base;
-            //         border: 2px solid $blue-base;
-            //         opacity: 100%;
-            //     }
-            //     div{
-            //         width: 100%;
-            //         align-items: center;
-            //      }
-            //      img{
-            //        display: none;
-            //     }
-              
-            // }
-            // h3,h4{
-            //     font-size: 1rem;
-            //     line-height: 20px;
-            //     }
-            //     h5{
-            //         font-size: 1.4rem;
-            // }
-        }
-        .div-header-text-mobile{
-            display: block;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            div{
-                width: 100%;
-                display: flex;
-                justify-content: center;
-            }
-             h4{
-                 margin-right: 3px;
              }
-            h3,h4{
-                font-size: 0.7rem;
-                line-height: 20px;
-                }
+            
                 img{
                  display: none;
                 }
-            h5{
-                font-size: 1rem;
-                margin:0 5px 0 5px;
+            p{
+                font-size: 2rem;
+                margin:0 15px;
                 }
             hr{
                 margin: 0.4rem;
@@ -336,10 +344,10 @@
             width: 100%;
             align-items: center;
                 h4{
-                font-size: 1rem;
+                font-size: 1.2rem;
                 }
                 h6{
-                    font-size: 1rem;
+                    font-size: 1.5rem;
                     letter-spacing: 0px;
                     line-height: 25px;
                 }
@@ -347,10 +355,10 @@
 
     }
 }
-@media screen and (min-width: 200px) and (max-width: 369px) {
+@media screen and (min-width: 464px) and (max-width: 674px) {
     .blue-header{
         background-color: $blue-base;
-        height: 80px;
+        height: 85px;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
@@ -358,7 +366,118 @@
         a{
             text-decoration: none;
             @include blue-header;
-            font-size: 0.5rem;
+            font-size: 0.8rem;
+        }
+        .div-rrss{
+            display: flex;
+            justify-content: center;
+            .icon-rrss{
+                font-size: 1rem;
+                margin-right: 10px;
+            }
+    
+        }
+        .div-paciente{
+            display: flex;
+            justify-content: space-evenly;
+            div {
+                margin: 5px;
+                img{
+              
+                   margin:4px
+                }
+                padding: 8px;
+                background-color: $grey-base;
+                height: 40px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .section-header{
+        height: 120px;
+        .container-header{
+            padding: 10px 10px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; 
+            .div-header-text{
+                display: none;
+        }
+        .div-header-text-mobile{
+                display: block;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                div{
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 200px;
+                }
+                a{
+                    @include white-header;
+                    text-decoration: none;
+                    h4{
+                        font-size: 1rem;
+                        font-weight:600;
+                        margin: 0;
+                        }
+                    h3{
+                        font-weight: bold;
+                        font-size: 1.6rem;
+                        margin: 0;
+                  }
+                }
+               
+                img{
+                 display: none;
+                }
+                p{
+                    font-size: 2rem;
+                    margin:0 15px;
+                    }
+                hr{
+                    margin: 0.4rem;
+                    width: 50%;
+                    background-color: $blue-base;
+                    color: $blue-base;
+                    border: 1x solid $blue-base;
+                    opacity: 100%;
+                }
+        }
+    }
+        .div-header-num{
+            width: 100%;
+            align-items: center;
+                h4{
+                font-size: 0.9rem;
+                }
+                h6{
+                    font-size: 1.3rem;
+                    letter-spacing: 0px;
+                    line-height: 25px;
+                }
+            }
+
+    }
+}
+
+@media screen and (min-width: 220px) and (max-width: 463px) {
+    .blue-header{
+        background-color: $blue-base;
+        height: 80px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 20px;
+        a{
+            text-decoration: none;
+            @include blue-header;
+            font-size: 12px;
         }
         .div-rrss{
             width: 40%;
@@ -371,84 +490,72 @@
     
         }
         .div-paciente{
-            width: 60%;
+            width: 100%;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: center;
+            align-items: center;
             div {
+                width: 100%;
+                margin: 5px;
                 img{
               
                    margin:4px
                 }
                 padding: 5px;
                 background-color: $grey-base;
-                height: 30px;
+                height: 35px;
                 text-align: center;
                 display: flex;
                 align-items: center;
+                justify-content: center;
             }
         }
     }
     .section-header{
-        height: 170px;
+        height: 120px;
         .container-header{
+            padding: 5px 5px;
             flex-direction: column;
             align-items: center;
             justify-content: center; 
             .div-header-text{
                 display: none;
-            //     width: 100%;
-            //     flex-direction: column;
-            //     hr{
-            //         margin: 0.5rem;
-            //         width: 50%;
-            //         background-color: $blue-base;
-            //         color: $blue-base;
-            //         border: 2px solid $blue-base;
-            //         opacity: 100%;
-            //     }
-            //     div{
-            //         width: 100%;
-            //         align-items: center;
-            //      }
-            //      img{
-            //        display: none;
-            //     }
-              
-            // }
-            // h3,h4{
-            //     font-size: 1rem;
-            //     line-height: 20px;
-            //     }
-            //     h5{
-            //         font-size: 1.4rem;
-            // }
         }
         .div-header-text-mobile{
             display: block;
             width: 100%;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
             div{
-                width: 100%;
                 display: flex;
-                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                align-items: center;
+                width: 150px;
             }
-             h4{
-                 margin-right: 3px;
-             }
-            h3,h4{
-                font-size: 0.6rem;
-                line-height: 20px;
+             a{
+                @include white-header;
+                text-decoration: none;
+                h4{
+                    font-size: 0.7rem;
+                    font-weight:600;
+                    margin: 0;
+                    }
+                h3{
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    margin: 0;
                 }
+             }
+          
                 img{
                  display: none;
                 }
-            h5{
-                font-size: 1rem;
-                margin:0 5px 0 5px;
-                }
+                p{
+                    font-size: 1.8rem;
+                    margin:0 10px;
+                    }
             hr{
                 margin: 0.4rem;
                 width: 50%;
@@ -463,10 +570,10 @@
             width: 100%;
             align-items: center;
                 h4{
-                font-size: 1rem;
+                font-size: 0.8rem;
                 }
                 h6{
-                    font-size: 1rem;
+                    font-size: 0.9rem;
                     letter-spacing: 0px;
                     line-height: 25px;
                 }

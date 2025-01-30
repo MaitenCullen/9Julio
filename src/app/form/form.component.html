@@ -1,7 +1,6 @@
 <div class="container" >  
-  <form id="contact"  method="POST" action="https://formsubmit.co/info@diagnostico9dejulio.com.ar"   >
-    <h3>Para mas información, le pedimos 
-      que por favor complete el formulario.</h3>
+  <form id="contact"  method="POST"  action="/send" >
+    <h3>Para más información, por favor complete el siguiente formulario</h3>
     <fieldset>
       <input placeholder="Nombre y apellido" type="text" tabindex="1" [formControl]="nombreControl" class="form-control nombre" name="nombre" required [(ngModel)]="nombre">
       <span *ngIf="nombreControl?.touched && !nombreControl.valid" class="error">
@@ -30,16 +29,20 @@
         </span>
     </fieldset> 
     <div class="container-buttons">
+      <div class="checkbox-wrapper-40">
+        <label>
+          <input type="checkbox" [formControl]="checkControl" (change)="onchecked($event)" />
+          <span class="checkbox">No soy robot</span>
+        </label>
+      </div>
       <div class="forms-buttons">
           <label>
-            <button name="submit" type="submit"  data-submit="...Sending" [disabled]="!nombreControl.valid || !empresaControl.valid || !emailControl.valid || !mensajeControl.valid"  (click)="onSubmit($event)" >Enviar</button>
+            <button name="submit" type="submit"  data-submit="...Sending" [disabled]="!nombreControl.valid || !empresaControl.valid || !emailControl.valid || !mensajeControl.valid || !checkControl.valid"  (click)="onSubmit($event)" class="blue-button" >Enviar</button>
           </label>
           <label for="">
-              <button name="delete" type="reset" >Borrar todo</button>
+              <button name="delete" type="reset" class="blue-button">Borrar todo</button>
           </label>
         </div>
     </div>
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" [value]="location"> 
   </form>
 </div>

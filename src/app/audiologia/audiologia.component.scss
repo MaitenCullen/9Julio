@@ -3,7 +3,7 @@
 .container-ul-audiologia{
    width: 100%;
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     margin:3% 0 3% 0;
     ul{
@@ -11,7 +11,8 @@
     }
     li{
         @include text-img-home;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+        font-weight: 600;
         line-height: 30px;
         padding: 1%;
         text-align: start;
