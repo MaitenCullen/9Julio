@@ -20,10 +20,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        p,h5{
+        p,h5,a{
             @include navbar;
             text-align: center;
             font-size: 1.5rem;
+            text-decoration: none;
         }
         h5{
             font-size: 2rem;
@@ -50,7 +51,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
-            p,h5{
+            p,h5,a{
                 @include navbar;
                 text-align: center;
                 font-size: 1.2rem;
@@ -81,7 +82,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
-            p,h5{
+            p,h5,a{
                 @include navbar;
                 text-align: center;
                 font-size: 1rem;
