@@ -113,6 +113,16 @@
                 margin-bottom: 0;
                 letter-spacing: 0px;
                 line-height: 40px;
+                text-decoration: none;
+            }
+            a{
+                font-size: 3.5rem;
+                font-weight: bold;
+                margin-bottom: 0;
+                letter-spacing: 0px;
+                line-height: 40px;
+                text-decoration: none;
+                color: $blue-base;
             }
         }
    
@@ -146,7 +156,7 @@
                 h4{
                 font-size: 1.4rem;
                 }
-                h6{
+                h6,a{
                     font-size: 2.5rem;
                 }
             }
@@ -188,7 +198,7 @@
                 font-size: 1.3rem;
                 line-height: 30px;
                 }
-                h6{
+                h6,a{
                     font-size: 1.8rem;
                     letter-spacing: 1px;
                 }
@@ -234,7 +244,7 @@
                 font-size: 1.1rem;
                 line-height: 15px;
                 }
-                h6{
+                h6,a{
                     font-size: 1.7rem;
                     letter-spacing: 0px;
                 
@@ -346,7 +356,7 @@
                 h4{
                 font-size: 1.2rem;
                 }
-                h6{
+                h6,a{
                     font-size: 1.5rem;
                     letter-spacing: 0px;
                     line-height: 25px;
@@ -456,7 +466,7 @@
                 h4{
                 font-size: 0.9rem;
                 }
-                h6{
+                h6,a{
                     font-size: 1.3rem;
                     letter-spacing: 0px;
                     line-height: 25px;
@@ -572,7 +582,7 @@
                 h4{
                 font-size: 0.8rem;
                 }
-                h6{
+                h6,a{
                     font-size: 0.9rem;
                     letter-spacing: 0px;
                     line-height: 25px;

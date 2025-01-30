@@ -23,7 +23,12 @@
 }
 
 
-
+.div-button{
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
 @media screen and (min-width: 1240px) and (max-width: 1700px) {
     .container-ul-audiologia{
         padding: 1%;

@@ -162,6 +162,13 @@
                 color: $background;
                 font-family: 'Montserrat', sans-serif;
             }
+            .blue-button{
+                font-size: 1rem;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
         }
     }
    
@@ -247,6 +254,13 @@
         .div-button-turnos{
             h4{
                 font-size: 1.8rem;
+            }
+            .blue-button{
+                font-size: 1rem;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
             }
         }
     }
@@ -376,6 +390,13 @@
                 padding: 0;
                 margin: 0;
             }
+            .blue-button{
+                font-size: 1rem;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
         }
     }
    
@@ -487,6 +508,10 @@
         }
         .blue-button{
             font-size: 1rem;
+            a{
+                text-decoration: none;
+                color: white;
+            }
         }
        
     }
@@ -518,6 +543,10 @@
         }
         .blue-button{
             font-size: 1rem;
+            a{
+                text-decoration: none;
+                color: white;
+            }
         }
 
     }
@@ -528,6 +557,13 @@
                 font-size: 1.2rem;
                 padding: 0;
                 margin: 0;
+            }
+            .blue-button{
+                font-size: 1rem;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
             }
         }
     }
@@ -628,6 +664,10 @@
         .blue-button{
             font-size: 0.6rem;
             padding: 3px 16px 3px 16px;
+            a{
+                text-decoration: none;
+                color: white;
+            }
             &:hover{
                 cursor: pointer;
             }
@@ -664,6 +704,10 @@
         .blue-button{
             font-size: 0.6rem;
             padding: 3px 16px 3px 16px;
+            a{
+                text-decoration: none;
+                color: white;
+            }
             &:hover{
                 cursor: pointer;
             }
@@ -691,6 +735,10 @@
             .blue-button{
                 font-size: 0.6rem;
                 padding: 3px 16px 3px 16px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
             }
             h4{
                 font-size: 0.8rem;
@@ -796,6 +844,10 @@
         .blue-button{
             font-size: 0.6rem;
             padding: 3px 16px 3px 16px;
+            a{
+                text-decoration: none;
+                color: white;
+            }
             &:hover{
                 cursor: pointer;
             }
@@ -832,6 +884,10 @@
         .blue-button{
             font-size: 0.6rem;
             padding: 3px 16px 3px 16px;
+            a{
+                text-decoration: none;
+                color: white;
+            }
             &:hover{
                 cursor: pointer;
             }
@@ -859,6 +915,10 @@
             .blue-button{
                 font-size: 0.6rem;
                 padding: 3px 16px 3px 16px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
             }
             h4{
                 font-size: 0.8rem;

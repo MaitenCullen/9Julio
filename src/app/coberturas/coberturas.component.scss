@@ -58,7 +58,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
-            p,h5{
+            p,h5,a{
                 @include navbar;
                 text-align: center;
                 font-size: 1.1rem;
@@ -99,7 +99,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly;
-            p,h5{
+            p,h5,a{
                 @include navbar;
                 text-align: center;
                 font-size: 12px;
